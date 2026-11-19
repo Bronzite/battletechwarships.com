@@ -1,0 +1,1776 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NAVAL ENGAGEMENT &amp; BATTLE LOG // BATTLETECH WARSHIPS ARCHIVE</title>
+  <link rel="stylesheet" href="../assets/terminal.css">
+</head>
+<body>
+<div class="terminal-container">
+  <header class="terminal-header">
+    <div class="header-pre">================================================================================</div>
+    <div class="header-title">COMSTAR NAVAL INTELLIGENCE ARCHIVE // WARSHIP MEMORIAL REGISTRY</div>
+    <div class="header-sub">TERMINAL NODE: TERRA-01 // PROVENANCE: VERIFIED PRIMARY LORE CORPUS</div>
+    <div class="header-pre">================================================================================</div>
+  </header>
+  <nav class="terminal-nav">
+    <a href="../index.html" class="nav-link">[ 00 // DASHBOARD ]</a>
+    <a href="../classes/index.html" class="nav-link">[ 01 // SHIP CLASSES ]</a>
+    <a href="../vessels/index.html" class="nav-link">[ 02 // VESSEL MEMORIAL ]</a>
+    <a href="../events/index.html" class="nav-link active">[ 03 // BATTLE ARCHIVES ]</a>
+    <a href="../systems/index.html" class="nav-link">[ 04 // STAR SYSTEMS ]</a>
+    <a href="../citations/index.html" class="nav-link">[ 05 // LORE CITATIONS ]</a>
+  </nav>
+  <div class="global-search-bar" data-global-search-container data-root="../">
+    <input type="search" class="terminal-input global-search-input" data-global-search placeholder="QUICK-JUMP ARCHIVE (VESSELS, ALIASES, CLASSES, BATTLES, SYSTEMS)..." autocomplete="off">
+    <div class="global-search-results" hidden></div>
+  </div>
+  <div class="nav-divider">--------------------------------------------------------------------------------</div>
+  <main class="terminal-main">
+    <div class="page-header-box">
+      <h1 class="page-title">&gt; NAVAL ENGAGEMENT &amp; BATTLE LOG</h1>
+      <div class="page-subtitle">MULTI-SHIP ACTIONS &amp; FLEET CONFLICTS</div>
+    </div>
+<div class="filter-bar">
+  <input type="search" class="terminal-input" data-table-filter="events-table" placeholder="FILTER ENGAGEMENTS BY TITLE, SYSTEM, CONFLICT, OR YEAR...">
+  <select class="terminal-select" data-table-select="events-table" data-col="1" aria-label="Filter by era">
+    <option value="">ALL ERAS</option>
+    <option value="Age of War">AGE OF WAR</option>
+    <option value="Clan Invasion">CLAN INVASION</option>
+    <option value="Dark Age">DARK AGE</option>
+    <option value="FedCom Civil War">FEDCOM CIVIL WAR</option>
+    <option value="ilClan Era">ILCLAN ERA</option>
+    <option value="Jihad">JIHAD</option>
+    <option value="Republic Era">REPUBLIC ERA</option>
+    <option value="Star League">STAR LEAGUE</option>
+    <option value="Succession Wars">SUCCESSION WARS</option>
+  </select>
+  <select class="terminal-select" data-table-select="events-table" data-col="3" aria-label="Filter by engagement type">
+    <option value="">ALL TYPES</option>
+    <option value="Ambush">Ambush</option>
+    <option value="CommerceRaiding">CommerceRaiding</option>
+    <option value="FleetAmbush">FleetAmbush</option>
+    <option value="FleetEngagement">FleetEngagement</option>
+    <option value="NavalAmbush">NavalAmbush</option>
+    <option value="NavalEngagement">NavalEngagement</option>
+    <option value="NavalIntercept">NavalIntercept</option>
+    <option value="OrbitalAssault">OrbitalAssault</option>
+    <option value="OrbitalBombardment">OrbitalBombardment</option>
+    <option value="OrbitalRaid">OrbitalRaid</option>
+    <option value="PlanetaryAssault">PlanetaryAssault</option>
+    <option value="RaidDefense">RaidDefense</option>
+    <option value="Sabotage">Sabotage</option>
+    <option value="ShowOfForce">ShowOfForce</option>
+    <option value="Skirmish">Skirmish</option>
+    <option value="TrialOfPossession">TrialOfPossession</option>
+  </select>
+  <select class="terminal-select" data-table-select="events-table" data-col="5" aria-label="Filter by conflict">
+    <option value="">ALL CONFLICTS</option>
+    <option value="Age of War">Age of War</option>
+    <option value="Age of War (Hegemony-Federated Suns)">Age of War (Hegemony-Federated Suns)</option>
+    <option value="Amaris Civil War">Amaris Civil War</option>
+    <option value="Amaris Civil War (Liberation of Terra)">Amaris Civil War (Liberation of Terra)</option>
+    <option value="Amaris Civil War (Operation APOTHEOSIS)">Amaris Civil War (Operation APOTHEOSIS)</option>
+    <option value="Amaris Civil War (Operation CHIEFTAIN)">Amaris Civil War (Operation CHIEFTAIN)</option>
+    <option value="Amaris Civil War (Operation LIBERATION)">Amaris Civil War (Operation LIBERATION)</option>
+    <option value="Annihilation of Clan Wolverine">Annihilation of Clan Wolverine</option>
+    <option value="Birth of the Terran Hegemony (Pre-Star League Persuasion Campaigns)">Birth of the Terran Hegemony (Pre-Star League Persuasion Campaigns)</option>
+    <option value="Campaigns of Persuasion">Campaigns of Persuasion</option>
+    <option value="Capellan Wave Three / Operation ACCIPITER">Capellan Wave Three / Operation ACCIPITER</option>
+    <option value="Clan Golden Century Trials">Clan Golden Century Trials</option>
+    <option value="Clan Invasion (Operation Revival)">Clan Invasion (Operation Revival)</option>
+    <option value="Coyote-Cloud Cobra Conflict (2948-2949)">Coyote-Cloud Cobra Conflict (2948-2949)</option>
+    <option value="Dark Age (Capellan-Federated Suns War)">Dark Age (Capellan-Federated Suns War)</option>
+    <option value="Dark Age (Combine-FedSuns War)">Dark Age (Combine-FedSuns War)</option>
+    <option value="Dark Age (Operation Lodestone / Skye Campaign)">Dark Age (Operation Lodestone / Skye Campaign)</option>
+    <option value="Draconis Combine-Snow Raven Clash">Draconis Combine-Snow Raven Clash</option>
+    <option value="FedCom Civil War">FedCom Civil War</option>
+    <option value="FedCom Civil War (Skye Separatist Raid)">FedCom Civil War (Skye Separatist Raid)</option>
+    <option value="FedCom Civil War (Wave Four)">FedCom Civil War (Wave Four)</option>
+    <option value="First Succession War">First Succession War</option>
+    <option value="First Succession War (Operation SOLAR SHIELD)">First Succession War (Operation SOLAR SHIELD)</option>
+    <option value="First Succession War (Operation SPIDERWEB)">First Succession War (Operation SPIDERWEB)</option>
+    <option value="First Succession War (Third AFFS Counteroffensive)">First Succession War (Third AFFS Counteroffensive)</option>
+    <option value="Ghost Bear - Draconis Combine War">Ghost Bear - Draconis Combine War</option>
+    <option value="Golden Century Inter-Clan Trials">Golden Century Inter-Clan Trials</option>
+    <option value="Golden Century Trials">Golden Century Trials</option>
+    <option value="Hegemony Campaigns of Persuasion">Hegemony Campaigns of Persuasion</option>
+    <option value="ilClan Era (Snow Raven Advance toward Terra)">ilClan Era (Snow Raven Advance toward Terra)</option>
+    <option value="ilClan Era / Capellan-Star League War">ilClan Era / Capellan-Star League War</option>
+    <option value="ilClan Trial / Defense of Terra">ilClan Trial / Defense of Terra</option>
+    <option value="ilClan Trial / Liberation of Terra">ilClan Trial / Liberation of Terra</option>
+    <option value="Jihad Aftermath (Bloody Tricentennial)">Jihad Aftermath (Bloody Tricentennial)</option>
+    <option value="Jihad Aftermath (Regulan Scourging)">Jihad Aftermath (Regulan Scourging)</option>
+    <option value="Malagrotta Crisis (Reunification War Prelude)">Malagrotta Crisis (Reunification War Prelude)</option>
+    <option value="Operation Audacity (Allied Jade Falcon Raid)">Operation Audacity (Allied Jade Falcon Raid)</option>
+    <option value="Operation BULLDOG">Operation BULLDOG</option>
+    <option value="Operation BULLDOG / Operation BIRDDOG">Operation BULLDOG / Operation BIRDDOG</option>
+    <option value="Operation Bulldog / Task Force Serpent">Operation Bulldog / Task Force Serpent</option>
+    <option value="Operation Klondike">Operation Klondike</option>
+    <option value="Operation SERPENT Occupation Aftermath">Operation SERPENT Occupation Aftermath</option>
+    <option value="Periphery Uprising">Periphery Uprising</option>
+    <option value="Pre-First Succession War Hegemony Partition">Pre-First Succession War Hegemony Partition</option>
+    <option value="Pre-Reunification Border Flashpoint">Pre-Reunification Border Flashpoint</option>
+    <option value="Pre-Reunification Star League Integration">Pre-Reunification Star League Integration</option>
+    <option value="Refusal War Aftermath / Homeworlds Clashes">Refusal War Aftermath / Homeworlds Clashes</option>
+    <option value="Reunification War">Reunification War</option>
+    <option value="Reunification War (Case AMBER)">Reunification War (Case AMBER)</option>
+    <option value="Reunification War (Taurian Campaign)">Reunification War (Taurian Campaign)</option>
+    <option value="Second Combine-Dominion War">Second Combine-Dominion War</option>
+    <option value="Second Succession War">Second Succession War</option>
+    <option value="Second Succession War (Fifth Andurien War)">Second Succession War (Fifth Andurien War)</option>
+    <option value="Second Succession War (Operation CELT)">Second Succession War (Operation CELT)</option>
+    <option value="Star Adder-Blood Spirit Conflict">Star Adder-Blood Spirit Conflict</option>
+    <option value="Star League Era Cold War (Pre-Periphery Uprising Tensions)">Star League Era Cold War (Pre-Periphery Uprising Tensions)</option>
+    <option value="The Red Corsair Campaign (3055)">The Red Corsair Campaign (3055)</option>
+    <option value="Third Succession War">Third Succession War</option>
+    <option value="Wars of Reaving">Wars of Reaving</option>
+    <option value="Wars of Reaving (Abjuration of Clan Goliath Scorpion)">Wars of Reaving (Abjuration of Clan Goliath Scorpion)</option>
+    <option value="Wars of Reaving (Annihilation of Clan Blood Spirit)">Wars of Reaving (Annihilation of Clan Blood Spirit)</option>
+    <option value="Wars of Reaving (Early Homeworlds Clashes)">Wars of Reaving (Early Homeworlds Clashes)</option>
+    <option value="Wars of Reaving (Hellion Strikes)">Wars of Reaving (Hellion Strikes)</option>
+    <option value="Wars of Reaving (Prelude)">Wars of Reaving (Prelude)</option>
+    <option value="Wars of Reaving / Hanseatic Expedition">Wars of Reaving / Hanseatic Expedition</option>
+    <option value="Wars of Reaving / Ice Hellion Incursion">Wars of Reaving / Ice Hellion Incursion</option>
+    <option value="Wars of the Republic Era (Rasalhague Dominion - Combine Naval Skirmish)">Wars of the Republic Era (Rasalhague Dominion - Combine Naval Skirmish)</option>
+    <option value="Word of Blake Jihad">Word of Blake Jihad</option>
+    <option value="Word of Blake Jihad (Coalition Advance)">Word of Blake Jihad (Coalition Advance)</option>
+    <option value="Word of Blake Jihad (Liberation of Terra)">Word of Blake Jihad (Liberation of Terra)</option>
+    <option value="Word of Blake Jihad (Operation SCOUR Prelude)">Word of Blake Jihad (Operation SCOUR Prelude)</option>
+    <option value="Word of Blake Jihad (Post-SCOUR Shadow Division Remnants)">Word of Blake Jihad (Post-SCOUR Shadow Division Remnants)</option>
+    <option value="Word of Blake Jihad / Black Dragon Uprising">Word of Blake Jihad / Black Dragon Uprising</option>
+    <option value="Word of Blake Jihad / FedSuns-Taurian War">Word of Blake Jihad / FedSuns-Taurian War</option>
+    <option value="Word of Blake Jihad / Outworlds Campaign">Word of Blake Jihad / Outworlds Campaign</option>
+    <option value="Word of Blake Jihad / Snow Raven Vengeance">Word of Blake Jihad / Snow Raven Vengeance</option>
+    <option value="Xin Sheng Campaign (ELH Peacekeeping Action)">Xin Sheng Campaign (ELH Peacekeeping Action)</option>
+  </select>
+  <select class="terminal-select" data-table-limit="events-table" aria-label="Rows to display">
+    <option value="100" selected>SHOW 100 ENGAGEMENTS</option>
+    <option value="250">SHOW 250 ENGAGEMENTS</option>
+    <option value="0">SHOW ALL ENGAGEMENTS</option>
+  </select>
+  <span class="filter-count text-dim" data-table-status="events-table" data-noun="ENGAGEMENTS">SHOWING ALL 159 ENGAGEMENTS</span>
+</div>
+<div class="table-responsive">
+  <table class="terminal-table" id="events-table" data-noun="ENGAGEMENTS">
+    <thead>
+      <tr>
+        <th>YEAR</th>
+        <th>ERA</th>
+        <th>ENGAGEMENT TITLE</th>
+        <th>TYPE</th>
+        <th>STAR SYSTEM</th>
+        <th>CONFLICT / CAMPAIGN</th>
+        <th>WARSHIPS COMMITTED</th>
+        <th>TACTICAL LOG</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="text-bright font-bold">2315</td>
+        <td>Age of War</td>
+        <td class="font-bold">Strand Rock Firepower Demonstration</td>
+        <td>ShowOfForce</td>
+        <td><a href="../systems/terra/index.html" class="action-link">Terra (Sol)</a></td>
+        <td>Birth of the Terran Hegemony (Pre-Star League Persuasion Campaigns)</td>
+        <td>1 Capital Ships</td>
+        <td><a href="strand-rock-demonstration-2315/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2316</td>
+        <td>Age of War</td>
+        <td class="font-bold">Battle of Thorin&#39;s Shores</td>
+        <td>NavalEngagement</td>
+        <td><a href="../systems/thorin/index.html" class="action-link">Thorin</a></td>
+        <td>Campaigns of Persuasion</td>
+        <td>1 Capital Ships</td>
+        <td><a href="battle-of-thorins-shores-2316/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2338</td>
+        <td>Age of War</td>
+        <td class="font-bold">Syrma Ambush</td>
+        <td>NavalAmbush</td>
+        <td><a href="../systems/syrma/index.html" class="action-link">Syrma</a></td>
+        <td>Hegemony Campaigns of Persuasion</td>
+        <td>1 Capital Ships</td>
+        <td><a href="syrma-ambush-2338/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2409</td>
+        <td>Age of War</td>
+        <td class="font-bold">Covert Reconnaissance &amp; Liberation of Terra Firma</td>
+        <td>NavalIntercept</td>
+        <td><a href="../systems/terra-firma/index.html" class="action-link">Terra Firma</a></td>
+        <td>Age of War</td>
+        <td>1 Capital Ships</td>
+        <td><a href="liberation-of-terra-firma-2409/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2431</td>
+        <td>Age of War</td>
+        <td class="font-bold">Kentares Supply Interdiction (Origin of the Crazy Jane Maneuver)</td>
+        <td>CommerceRaiding</td>
+        <td><a href="../systems/kentares-iv/index.html" class="action-link">Kentares IV</a></td>
+        <td>Age of War (Hegemony-Federated Suns)</td>
+        <td>1 Capital Ships</td>
+        <td><a href="kentares-supply-interdiction-2431/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2572</td>
+        <td>Star League</td>
+        <td class="font-bold">Vakarel Orbital Collision (United Triumph Exercises)</td>
+        <td>Skirmish</td>
+        <td><a href="../systems/vakarel/index.html" class="action-link">Vakarel</a></td>
+        <td>Pre-Reunification Star League Integration</td>
+        <td>2 Capital Ships</td>
+        <td><a href="collision-over-vakarel-2572/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2573</td>
+        <td>Star League</td>
+        <td class="font-bold">Malagrotta Incident (Battle over Fontana)</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/fontana/index.html" class="action-link">Malagrotta (Fontana)</a></td>
+        <td>Malagrotta Crisis (Reunification War Prelude)</td>
+        <td>7 Capital Ships</td>
+        <td><a href="battle-of-fontana-case-amber/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2573</td>
+        <td>Star League</td>
+        <td class="font-bold">The Malagrotta Crisis (Fontana Clash)</td>
+        <td>FleetAmbush</td>
+        <td><a href="../systems/malagrotta/index.html" class="action-link">Malagrotta</a></td>
+        <td>Pre-Reunification Border Flashpoint</td>
+        <td>0 Capital Ships</td>
+        <td><a href="malagrotta-crisis-2573/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2577</td>
+        <td>Star League</td>
+        <td class="font-bold">Taurian Raid on Panpour (Capture of FSS Chesterton)</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/panpour/index.html" class="action-link">Panpour</a></td>
+        <td>Reunification War (Case AMBER)</td>
+        <td>1 Capital Ships</td>
+        <td><a href="capture-of-fss-chesterton-panpour-2577/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2577</td>
+        <td>Star League</td>
+        <td class="font-bold">Canopian Counterattack at Vakarel</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/vakarel/index.html" class="action-link">Vakarel</a></td>
+        <td>Reunification War</td>
+        <td>0 Capital Ships</td>
+        <td><a href="vakarel-counterattack-2577/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2577</td>
+        <td>Star League</td>
+        <td class="font-bold">Battle of Tentativa (Case AMBER)</td>
+        <td>FleetAmbush</td>
+        <td><a href="../systems/tentativa/index.html" class="action-link">Tentativa</a></td>
+        <td>Reunification War</td>
+        <td>2 Capital Ships</td>
+        <td><a href="battle-of-tentativa-2577/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2578</td>
+        <td>Star League</td>
+        <td class="font-bold">Naval Battle of Ridgebrook</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/ridgebrook/index.html" class="action-link">Ridgebrook</a></td>
+        <td>Reunification War</td>
+        <td>0 Capital Ships</td>
+        <td><a href="battle-of-ridgebrook-2578/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2580</td>
+        <td>Star League</td>
+        <td class="font-bold">Battle for the Pleiades</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/maia/index.html" class="action-link">Maia</a></td>
+        <td>Reunification War</td>
+        <td>0 Capital Ships</td>
+        <td><a href="battle-for-the-pleiades-2580/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2581</td>
+        <td>Star League</td>
+        <td class="font-bold">Battle of Flintoft</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/flintoft/index.html" class="action-link">Flintoft</a></td>
+        <td>Reunification War</td>
+        <td>0 Capital Ships</td>
+        <td><a href="battle-of-flintoft-2581/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2581</td>
+        <td>Star League</td>
+        <td class="font-bold">Battle of Robsart</td>
+        <td>NavalEngagement</td>
+        <td><a href="../systems/robsart/index.html" class="action-link">Robsart</a></td>
+        <td>Reunification War</td>
+        <td>0 Capital Ships</td>
+        <td><a href="battle-of-robsart-2581/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2582</td>
+        <td>Star League</td>
+        <td class="font-bold">Assault on Horsham &amp; Shipyards</td>
+        <td>PlanetaryAssault</td>
+        <td><a href="../systems/horsham/index.html" class="action-link">Horsham</a></td>
+        <td>Reunification War</td>
+        <td>0 Capital Ships</td>
+        <td><a href="siege-of-horsham-2582/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2587</td>
+        <td>Star League</td>
+        <td class="font-bold">Battle of Montour</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/montour/index.html" class="action-link">Montour</a></td>
+        <td>Reunification War (Taurian Campaign)</td>
+        <td>0 Capital Ships</td>
+        <td><a href="battle-of-montour-2587/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2588</td>
+        <td>Star League</td>
+        <td class="font-bold">Naval Actions at Newtown Square</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/newtown-square/index.html" class="action-link">Newtown Square</a></td>
+        <td>Reunification War</td>
+        <td>0 Capital Ships</td>
+        <td><a href="battle-of-newtown-square-2588/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2763</td>
+        <td>Star League</td>
+        <td class="font-bold">Calloway VI Patrol Clash</td>
+        <td>Skirmish</td>
+        <td><a href="../systems/calloway-vi/index.html" class="action-link">Calloway VI</a></td>
+        <td>Star League Era Cold War (Pre-Periphery Uprising Tensions)</td>
+        <td>2 Capital Ships</td>
+        <td><a href="calloway-vi-incident-2763/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2765</td>
+        <td>Star League</td>
+        <td class="font-bold">Loss of SLS Nebraska (Periphery Uprising)</td>
+        <td>Sabotage</td>
+        <td><a href="../systems/new-vandenburg/index.html" class="action-link">New Vandenburg</a></td>
+        <td>Periphery Uprising</td>
+        <td>2 Capital Ships</td>
+        <td><a href="sabotage-of-sls-nebraska-2765/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2766</td>
+        <td>Star League</td>
+        <td class="font-bold">Battle of New Earth (Amaris Coup Convoy Defense)</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/new-earth/index.html" class="action-link">New Earth</a></td>
+        <td>Amaris Civil War (Operation APOTHEOSIS)</td>
+        <td>2 Capital Ships</td>
+        <td><a href="battle-of-new-earth-coup-2766/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2766</td>
+        <td>Star League</td>
+        <td class="font-bold">Battle of Terra (Operation APOTHEOSIS Outbreak)</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/terra/index.html" class="action-link">Terra (Sol)</a></td>
+        <td>Amaris Civil War (Operation APOTHEOSIS)</td>
+        <td>6 Capital Ships</td>
+        <td><a href="battle-of-terra-amaris-coup-2766/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2767</td>
+        <td>Star League</td>
+        <td class="font-bold">Assault on New Dallas Orbital SDS</td>
+        <td>PlanetaryAssault</td>
+        <td><a href="../systems/new-dallas/index.html" class="action-link">New Dallas</a></td>
+        <td>Amaris Civil War (Operation APOTHEOSIS)</td>
+        <td>1 Capital Ships</td>
+        <td><a href="battle-of-new-dallas-2767/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2767</td>
+        <td>Star League</td>
+        <td class="font-bold">Loss of the 568th Flotilla at Epsilon Indi</td>
+        <td>FleetAmbush</td>
+        <td><a href="../systems/epsilon-indi/index.html" class="action-link">Epsilon Indi</a></td>
+        <td>Amaris Civil War</td>
+        <td>3 Capital Ships</td>
+        <td><a href="massacre-of-epsilon-indi-2767/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2775</td>
+        <td>Star League</td>
+        <td class="font-bold">Assault on New Home (Project NIKE Debut)</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/new-home/index.html" class="action-link">New Home</a></td>
+        <td>Amaris Civil War (Operation CHIEFTAIN)</td>
+        <td>2 Capital Ships</td>
+        <td><a href="battle-of-new-home-2775/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2775</td>
+        <td>Star League</td>
+        <td class="font-bold">Operation Chieftain: Liberation of Nusakan</td>
+        <td>PlanetaryAssault</td>
+        <td><a href="../systems/nusakan/index.html" class="action-link">Nusakan</a></td>
+        <td>Amaris Civil War (Operation Chieftain)</td>
+        <td>2 Capital Ships</td>
+        <td><a href="liberation-of-nusakan-2775/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2777</td>
+        <td>Star League</td>
+        <td class="font-bold">Operation LIBERATION: Terran System Jump &amp; Task Force Leonidas</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/terra/index.html" class="action-link">Terra (Sol)</a></td>
+        <td>Amaris Civil War (Operation LIBERATION)</td>
+        <td>6 Capital Ships</td>
+        <td><a href="battle-of-terra-leonidas-2777/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2777</td>
+        <td>Star League</td>
+        <td class="font-bold">Operation LIBERATION: Terran Landings &amp; Mars Drone Action</td>
+        <td>PlanetaryAssault</td>
+        <td><a href="../systems/terra/index.html" class="action-link">Terra (Sol)</a></td>
+        <td>Amaris Civil War (Liberation of Terra)</td>
+        <td>4 Capital Ships</td>
+        <td><a href="battle-of-mars-2777/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2785</td>
+        <td>Succession Wars</td>
+        <td class="font-bold">Lyran Opening Assault on Bolan</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/bolan/index.html" class="action-link">Bolan</a></td>
+        <td>First Succession War</td>
+        <td>6 Capital Ships</td>
+        <td><a href="battle-of-bolan-2785/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2785</td>
+        <td>Succession Wars</td>
+        <td class="font-bold">Conquest of Denebola</td>
+        <td>OrbitalAssault</td>
+        <td><a href="../systems/denebola/index.html" class="action-link">Denebola</a></td>
+        <td>Pre-First Succession War Hegemony Partition</td>
+        <td>3 Capital Ships</td>
+        <td><a href="battle-of-denebola-2785/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2787</td>
+        <td>Succession Wars</td>
+        <td class="font-bold">Capellan Counter-Blockade &amp; Space Battle of Corey</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/corey/index.html" class="action-link">Corey</a></td>
+        <td>First Succession War</td>
+        <td>5 Capital Ships</td>
+        <td><a href="battle-of-corey-2787/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2787</td>
+        <td>Succession Wars</td>
+        <td class="font-bold">Battle of Dieron (Nebulos Junkyard Action)</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/dieron/index.html" class="action-link">Dieron</a></td>
+        <td>First Succession War</td>
+        <td>12 Capital Ships</td>
+        <td><a href="battle-of-dieron-2787/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2787</td>
+        <td>Succession Wars</td>
+        <td class="font-bold">Battle of Second Chance (Path to Sarna Opening)</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/second-chance/index.html" class="action-link">Second Chance</a></td>
+        <td>First Succession War</td>
+        <td>5 Capital Ships</td>
+        <td><a href="battle-of-second-chance-2787/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2787</td>
+        <td>Succession Wars</td>
+        <td class="font-bold">Space Battle over Wazan</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/wazan/index.html" class="action-link">Wazan</a></td>
+        <td>First Succession War</td>
+        <td>2 Capital Ships</td>
+        <td><a href="battle-of-wazan-2787/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2787</td>
+        <td>Succession Wars</td>
+        <td class="font-bold">Tamar Tigers Raid on Luthien</td>
+        <td>PlanetaryAssault</td>
+        <td><a href="../systems/luthien/index.html" class="action-link">Luthien</a></td>
+        <td>First Succession War</td>
+        <td>2 Capital Ships</td>
+        <td><a href="raid-on-luthien-2787/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2787</td>
+        <td>Succession Wars</td>
+        <td class="font-bold">Battle of Bolson Shipyards (Kyoto)</td>
+        <td>NavalEngagement</td>
+        <td><a href="../systems/kyoto/index.html" class="action-link">Kyoto</a></td>
+        <td>First Succession War</td>
+        <td>4 Capital Ships</td>
+        <td><a href="battle-of-bolson-shipyards-2787/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2787</td>
+        <td>Succession Wars</td>
+        <td class="font-bold">Battle for Clovis</td>
+        <td>NavalEngagement</td>
+        <td><a href="../systems/clovis/index.html" class="action-link">Clovis</a></td>
+        <td>First Succession War</td>
+        <td>6 Capital Ships</td>
+        <td><a href="battle-of-clovis-2787/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2787</td>
+        <td>Succession Wars</td>
+        <td class="font-bold">Battle of Skondia</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/skondia/index.html" class="action-link">Skondia</a></td>
+        <td>First Succession War</td>
+        <td>3 Capital Ships</td>
+        <td><a href="battle-of-skondia-2787/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2787</td>
+        <td>Succession Wars</td>
+        <td class="font-bold">First Battle of Hesperus II (Operation BROKEN BLADE)</td>
+        <td>OrbitalAssault</td>
+        <td><a href="../systems/hesperus-ii/index.html" class="action-link">Hesperus II</a></td>
+        <td>First Succession War</td>
+        <td>0 Capital Ships</td>
+        <td><a href="first-battle-of-hesperus-ii-2787/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2788</td>
+        <td>Succession Wars</td>
+        <td class="font-bold">Operation SOLAR SHIELD: Ambush at Cartago</td>
+        <td>NavalEngagement</td>
+        <td><a href="../systems/cartago/index.html" class="action-link">Cartago</a></td>
+        <td>First Succession War (Operation SOLAR SHIELD)</td>
+        <td>3 Capital Ships</td>
+        <td><a href="operation-solar-shield-cartago-2788/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2788</td>
+        <td>Succession Wars</td>
+        <td class="font-bold">Operation SOLAR SHIELD: Ambush at Elbar</td>
+        <td>NavalEngagement</td>
+        <td><a href="../systems/elbar/index.html" class="action-link">Elbar</a></td>
+        <td>First Succession War (Operation SOLAR SHIELD)</td>
+        <td>2 Capital Ships</td>
+        <td><a href="operation-solar-shield-elbar-2788/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2788</td>
+        <td>Succession Wars</td>
+        <td class="font-bold">Operation SOLAR SHIELD: Battle of Schedar</td>
+        <td>NavalEngagement</td>
+        <td><a href="../systems/schedar/index.html" class="action-link">Schedar</a></td>
+        <td>First Succession War (Operation SOLAR SHIELD)</td>
+        <td>5 Capital Ships</td>
+        <td><a href="operation-solar-shield-schedar-2788/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2789</td>
+        <td>Succession Wars</td>
+        <td class="font-bold">Debacle at Calloway VI</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/calloway-vi/index.html" class="action-link">Calloway VI</a></td>
+        <td>First Succession War</td>
+        <td>3 Capital Ships</td>
+        <td><a href="battle-of-calloway-vi-2789/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2789</td>
+        <td>Succession Wars</td>
+        <td class="font-bold">Third Battle of Hesperus II</td>
+        <td>NavalEngagement</td>
+        <td><a href="../systems/hesperus-ii/index.html" class="action-link">Hesperus II</a></td>
+        <td>First Succession War</td>
+        <td>5 Capital Ships</td>
+        <td><a href="third-battle-of-hesperus-ii-2789/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2790</td>
+        <td>Succession Wars</td>
+        <td class="font-bold">Battle of Cholame</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/cholame/index.html" class="action-link">Cholame</a></td>
+        <td>First Succession War</td>
+        <td>2 Capital Ships</td>
+        <td><a href="battle-of-cholame-2790/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2791</td>
+        <td>Succession Wars</td>
+        <td class="font-bold">Raid on Finmark Shipyards (Operation HAIFISCHFLOSSENSUPPE)</td>
+        <td>OrbitalAssault</td>
+        <td><a href="../systems/finmark/index.html" class="action-link">Finmark</a></td>
+        <td>First Succession War</td>
+        <td>3 Capital Ships</td>
+        <td><a href="destruction-of-finmark-yards-2791/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2797</td>
+        <td>Succession Wars</td>
+        <td class="font-bold">Naval Raid on Delavan</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/delavan/index.html" class="action-link">Delavan</a></td>
+        <td>First Succession War</td>
+        <td>0 Capital Ships</td>
+        <td><a href="battle-of-delavan-2797/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2806</td>
+        <td>Succession Wars</td>
+        <td class="font-bold">Relief of Oriente (Third Capellan Siege)</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/oriente/index.html" class="action-link">Oriente</a></td>
+        <td>First Succession War</td>
+        <td>4 Capital Ships</td>
+        <td><a href="relief-of-oriente-2806/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2814</td>
+        <td>Succession Wars</td>
+        <td class="font-bold">Naval Action at Dahar IV</td>
+        <td>NavalEngagement</td>
+        <td><a href="../systems/dahar-iv/index.html" class="action-link">Dahar IV</a></td>
+        <td>First Succession War (Third AFFS Counteroffensive)</td>
+        <td>2 Capital Ships</td>
+        <td><a href="battle-of-dahar-iv-2814/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2814</td>
+        <td>Succession Wars</td>
+        <td class="font-bold">Naval Liberation of Robinson</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/robinson/index.html" class="action-link">Robinson</a></td>
+        <td>First Succession War (Third AFFS Counteroffensive)</td>
+        <td>5 Capital Ships</td>
+        <td><a href="liberation-of-robinson-2814/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2814</td>
+        <td>Succession Wars</td>
+        <td class="font-bold">Orbital Bombardment of Klathandu IV</td>
+        <td>OrbitalAssault</td>
+        <td><a href="../systems/klathandu-iv/index.html" class="action-link">Klathandu IV</a></td>
+        <td>First Succession War</td>
+        <td>0 Capital Ships</td>
+        <td><a href="orbital-attack-on-klathandu-iv-2814/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2817</td>
+        <td>Succession Wars</td>
+        <td class="font-bold">Battle of Bella I (Ramming of LCS Edelweiss)</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/bella-i/index.html" class="action-link">Bella I</a></td>
+        <td>First Succession War</td>
+        <td>3 Capital Ships</td>
+        <td><a href="battle-of-bella-i-2817/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2819</td>
+        <td>Succession Wars</td>
+        <td class="font-bold">Battle at Kalidasa&#39;s Zenith Jump Point</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/kalidasa/index.html" class="action-link">Kalidasa</a></td>
+        <td>First Succession War (Operation SPIDERWEB)</td>
+        <td>2 Capital Ships</td>
+        <td><a href="battle-of-kalidasa-2819/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2820</td>
+        <td>Succession Wars</td>
+        <td class="font-bold">Retaliatory Raid &amp; Bombardment of Solaris VII</td>
+        <td>OrbitalBombardment</td>
+        <td><a href="../systems/solaris/index.html" class="action-link">Solaris VII</a></td>
+        <td>First Succession War</td>
+        <td>1 Capital Ships</td>
+        <td><a href="raid-on-solaris-vii-2820/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2821</td>
+        <td>Succession Wars</td>
+        <td class="font-bold">Operation Klondike: Pentagon Naval Liberation</td>
+        <td>NavalEngagement</td>
+        <td><a href="../systems/pentagon-worlds/index.html" class="action-link">Pentagon Worlds</a></td>
+        <td>Operation Klondike</td>
+        <td>12 Capital Ships</td>
+        <td><a href="operation-klondike-pentagon-jump-2821/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2823</td>
+        <td>Succession Wars</td>
+        <td class="font-bold">Orbital Skirmish over Dehra Dun</td>
+        <td>NavalEngagement</td>
+        <td><a href="../systems/circe/index.html" class="action-link">Circe</a></td>
+        <td>Annihilation of Clan Wolverine</td>
+        <td>2 Capital Ships</td>
+        <td><a href="skirmish-over-dehra-dun-2823/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2824</td>
+        <td>Succession Wars</td>
+        <td class="font-bold">Trial of Annihilation at Barbados</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/barbados/index.html" class="action-link">Barbados (Gamma 1551 AV)</a></td>
+        <td>Annihilation of Clan Wolverine</td>
+        <td>9 Capital Ships</td>
+        <td><a href="battle-of-barbados-2824/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2828</td>
+        <td>Succession Wars</td>
+        <td class="font-bold">Battle of Chesterton (Operation CELT)</td>
+        <td>NavalEngagement</td>
+        <td><a href="../systems/chesterton/index.html" class="action-link">Chesterton</a></td>
+        <td>Second Succession War (Operation CELT)</td>
+        <td>4 Capital Ships</td>
+        <td><a href="battle-of-chesterton-2828/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2832</td>
+        <td>Succession Wars</td>
+        <td class="font-bold">Operation LION (First Battle of Tikonov)</td>
+        <td>NavalEngagement</td>
+        <td><a href="../systems/tikonov/index.html" class="action-link">Tikonov</a></td>
+        <td>Second Succession War</td>
+        <td>2 Capital Ships</td>
+        <td><a href="first-battle-of-tikonov-2832/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2838</td>
+        <td>Succession Wars</td>
+        <td class="font-bold">Naval Battle of Andurien (Fifth Andurien War)</td>
+        <td>NavalEngagement</td>
+        <td><a href="../systems/andurien/index.html" class="action-link">Andurien</a></td>
+        <td>Second Succession War (Fifth Andurien War)</td>
+        <td>4 Capital Ships</td>
+        <td><a href="fifth-andurien-war-andurien-2838/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2853</td>
+        <td>Succession Wars</td>
+        <td class="font-bold">Relief of Hesperus II (2853)</td>
+        <td>NavalEngagement</td>
+        <td><a href="../systems/hesperus-ii/index.html" class="action-link">Hesperus II</a></td>
+        <td>Second Succession War</td>
+        <td>3 Capital Ships</td>
+        <td><a href="siege-of-hesperus-ii-2853/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2874</td>
+        <td>Succession Wars</td>
+        <td class="font-bold">Vinton Enclave Trial of Possession</td>
+        <td>RaidDefense</td>
+        <td><a href="../systems/vinton/index.html" class="action-link">Vinton</a></td>
+        <td>Clan Golden Century Trials</td>
+        <td>1 Capital Ships</td>
+        <td><a href="trial-for-vinton-2874/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2920</td>
+        <td>Succession Wars</td>
+        <td class="font-bold">Trial over Strato Domingo</td>
+        <td>TrialOfPossession</td>
+        <td><a href="../systems/strato-domingo/index.html" class="action-link">Strato Domingo</a></td>
+        <td>Golden Century Trials</td>
+        <td>2 Capital Ships</td>
+        <td><a href="trial-of-strato-domingo-2920/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2926</td>
+        <td>Succession Wars</td>
+        <td class="font-bold">Trial of Retaliation at Bearclaw</td>
+        <td>TrialOfPossession</td>
+        <td><a href="../systems/bearclaw/index.html" class="action-link">Bearclaw</a></td>
+        <td>Golden Century Trials</td>
+        <td>1 Capital Ships</td>
+        <td><a href="retaliation-at-bearclaw-2926/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2940</td>
+        <td>Succession Wars</td>
+        <td class="font-bold">Skirmish at Cinnabar (Wreck of FSS Kali)</td>
+        <td>OrbitalAssault</td>
+        <td><a href="../systems/cinnabar/index.html" class="action-link">Cinnabar</a></td>
+        <td>Third Succession War</td>
+        <td>3 Capital Ships</td>
+        <td><a href="skirmish-at-cinnabar-2940/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2948</td>
+        <td>Succession Wars</td>
+        <td class="font-bold">Coyote-Cloud Cobra Space Battles at Brim</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/brim/index.html" class="action-link">Brim</a></td>
+        <td>Coyote-Cloud Cobra Conflict (2948-2949)</td>
+        <td>2 Capital Ships</td>
+        <td><a href="battle-of-brim-2948/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">2966</td>
+        <td>Succession Wars</td>
+        <td class="font-bold">Trial of Lum (Molniya Flotilla Action)</td>
+        <td>TrialOfPossession</td>
+        <td><a href="../systems/lum/index.html" class="action-link">Lum</a></td>
+        <td>Golden Century Inter-Clan Trials</td>
+        <td>2 Capital Ships</td>
+        <td><a href="trial-of-lum-2966/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3001</td>
+        <td>Succession Wars</td>
+        <td class="font-bold">Trial of Possession for Arcadian Russets</td>
+        <td>TrialOfPossession</td>
+        <td><a href="../systems/acadia/index.html" class="action-link">Acadia</a></td>
+        <td>Golden Century Inter-Clan Trials</td>
+        <td>1 Capital Ships</td>
+        <td><a href="trial-of-acadia-3001/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3050</td>
+        <td>Clan Invasion</td>
+        <td class="font-bold">Orbital Destruction of Edo (Turtle Bay)</td>
+        <td>OrbitalBombardment</td>
+        <td><a href="../systems/turtle-bay/index.html" class="action-link">Turtle Bay</a></td>
+        <td>Clan Invasion (Operation Revival)</td>
+        <td>1 Capital Ships</td>
+        <td><a href="bombardment-of-edo-3050/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3050</td>
+        <td>Clan Invasion</td>
+        <td class="font-bold">Battle of Radstadt (Death of ilKhan Leo Showers)</td>
+        <td>NavalIntercept</td>
+        <td><a href="../systems/radstadt/index.html" class="action-link">Radstadt</a></td>
+        <td>Clan Invasion (Operation Revival)</td>
+        <td>1 Capital Ships</td>
+        <td><a href="battle-of-radstadt-3050/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3055</td>
+        <td>Clan Invasion</td>
+        <td class="font-bold">Pirate-Point Ambush at Zanderij</td>
+        <td>FleetAmbush</td>
+        <td><a href="../systems/zanderij/index.html" class="action-link">Zanderij</a></td>
+        <td>The Red Corsair Campaign (3055)</td>
+        <td>1 Capital Ships</td>
+        <td><a href="ambush-at-zanderij-3055/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3059</td>
+        <td>Clan Invasion</td>
+        <td class="font-bold">Orbital Battle of Luzerne (Operation BIRDDOG)</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/luzerne/index.html" class="action-link">Luzerne</a></td>
+        <td>Operation BULLDOG / Operation BIRDDOG</td>
+        <td>3 Capital Ships</td>
+        <td><a href="battle-of-luzerne-3059/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3059</td>
+        <td>Clan Invasion</td>
+        <td class="font-bold">Ambush on the Exodus Road (Deep Periphery)</td>
+        <td>NavalEngagement</td>
+        <td><a href="../systems/deep-periphery-serpent/index.html" class="action-link">Deep Periphery Waypoint (Exodus Road)</a></td>
+        <td>Operation Bulldog / Task Force Serpent</td>
+        <td>8 Capital Ships</td>
+        <td><a href="battle-of-deep-periphery-serpent-3059/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3059</td>
+        <td>Clan Invasion</td>
+        <td class="font-bold">Evacuation of Matamoros</td>
+        <td>NavalEngagement</td>
+        <td><a href="../systems/matamoros/index.html" class="action-link">Matamoros</a></td>
+        <td>Operation BULLDOG</td>
+        <td>4 Capital Ships</td>
+        <td><a href="battle-of-matamoros-3059/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3060</td>
+        <td>Clan Invasion</td>
+        <td class="font-bold">Operation Exodus Decoy Maneuver over Huntress</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/huntress/index.html" class="action-link">Huntress</a></td>
+        <td>Operation SERPENT Occupation Aftermath</td>
+        <td>3 Capital Ships</td>
+        <td><a href="smoke-jaguar-exodus-huntress-3060/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3060</td>
+        <td>Clan Invasion</td>
+        <td class="font-bold">Battle of Huntress (Zenith Jump Point)</td>
+        <td>NavalEngagement</td>
+        <td><a href="../systems/huntress/index.html" class="action-link">Huntress</a></td>
+        <td>Operation Bulldog / Task Force Serpent</td>
+        <td>10 Capital Ships</td>
+        <td><a href="battle-of-huntress-zenith-3060/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3060</td>
+        <td>Clan Invasion</td>
+        <td class="font-bold">First Battle of Huntress (Task Force Serpent Arrival)</td>
+        <td>NavalEngagement</td>
+        <td><a href="../systems/huntress/index.html" class="action-link">Huntress</a></td>
+        <td>Operation BULLDOG / Task Force Serpent</td>
+        <td>4 Capital Ships</td>
+        <td><a href="first-battle-of-huntress-3060/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3062</td>
+        <td>FedCom Civil War</td>
+        <td class="font-bold">Rogue Alshain Avengers Strike on Alshain</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/alshain/index.html" class="action-link">Alshain</a></td>
+        <td>Ghost Bear - Draconis Combine War</td>
+        <td>2 Capital Ships</td>
+        <td><a href="alshain-rogue-assault-3062/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3062</td>
+        <td>FedCom Civil War</td>
+        <td class="font-bold">Zenith Standoff at Milos</td>
+        <td>NavalIntercept</td>
+        <td><a href="../systems/milos/index.html" class="action-link">Milos</a></td>
+        <td>Xin Sheng Campaign (ELH Peacekeeping Action)</td>
+        <td>1 Capital Ships</td>
+        <td><a href="standoff-at-milos-3062/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3063</td>
+        <td>FedCom Civil War</td>
+        <td class="font-bold">Coventry Umbra Intercept Watch</td>
+        <td>NavalIntercept</td>
+        <td><a href="../systems/coventry/index.html" class="action-link">Coventry</a></td>
+        <td>FedCom Civil War</td>
+        <td>1 Capital Ships</td>
+        <td><a href="ambush-over-coventry-3063/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3063</td>
+        <td>FedCom Civil War</td>
+        <td class="font-bold">Star Adder Naval Assault on York (August 3063)</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/york/index.html" class="action-link">York</a></td>
+        <td>Star Adder-Blood Spirit Conflict</td>
+        <td>2 Capital Ships</td>
+        <td><a href="battle-of-york-3063/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3064</td>
+        <td>FedCom Civil War</td>
+        <td class="font-bold">Drydock Raid &amp; Capture of CJF Black Talon at Butler</td>
+        <td>NavalAmbush</td>
+        <td><a href="../systems/butler/index.html" class="action-link">Butler</a></td>
+        <td>Operation Audacity (Allied Jade Falcon Raid)</td>
+        <td>1 Capital Ships</td>
+        <td><a href="capture-of-black-talon-butler-3064/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3065</td>
+        <td>FedCom Civil War</td>
+        <td class="font-bold">Second Battle of Hesperus II (Maria&#39;s Elegy Intercept)</td>
+        <td>NavalEngagement</td>
+        <td><a href="../systems/hesperus-ii/index.html" class="action-link">Hesperus II</a></td>
+        <td>FedCom Civil War (Skye Separatist Raid)</td>
+        <td>3 Capital Ships</td>
+        <td><a href="battle-of-hesperus-ii-3065/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3065</td>
+        <td>FedCom Civil War</td>
+        <td class="font-bold">Steel Viper Assault &amp; Withdrawal from Lum</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/lum/index.html" class="action-link">Lum</a></td>
+        <td>Refusal War Aftermath / Homeworlds Clashes</td>
+        <td>4 Capital Ships</td>
+        <td><a href="steel-viper-raid-on-lum-3065/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3065</td>
+        <td>FedCom Civil War</td>
+        <td class="font-bold">Orbital Clash over New Syrtis</td>
+        <td>NavalEngagement</td>
+        <td><a href="../systems/new-syrtis/index.html" class="action-link">New Syrtis</a></td>
+        <td>FedCom Civil War</td>
+        <td>2 Capital Ships</td>
+        <td><a href="battle-of-new-syrtis-3065/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3065</td>
+        <td>FedCom Civil War</td>
+        <td class="font-bold">Orbital Duel over Tikonov</td>
+        <td>NavalEngagement</td>
+        <td><a href="../systems/tikonov/index.html" class="action-link">Tikonov</a></td>
+        <td>FedCom Civil War (Wave Four)</td>
+        <td>2 Capital Ships</td>
+        <td><a href="battle-of-tikonov-3065/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3066</td>
+        <td>FedCom Civil War</td>
+        <td class="font-bold">Battle of New Avalon (Orbital Engagement)</td>
+        <td>NavalEngagement</td>
+        <td><a href="../systems/new-avalon/index.html" class="action-link">New Avalon</a></td>
+        <td>FedCom Civil War</td>
+        <td>9 Capital Ships</td>
+        <td><a href="battle-of-new-avalon-3066/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3066</td>
+        <td>FedCom Civil War</td>
+        <td class="font-bold">Battle of Tharkad (Wolf-in-Exile &amp; Lyran Alliance Engagement)</td>
+        <td>NavalEngagement</td>
+        <td><a href="../systems/tharkad/index.html" class="action-link">Tharkad</a></td>
+        <td>FedCom Civil War</td>
+        <td>6 Capital Ships</td>
+        <td><a href="battle-of-tharkad-3066/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3067</td>
+        <td>FedCom Civil War</td>
+        <td class="font-bold">Word of Blake Nuclear Strike on Tharkad</td>
+        <td>PlanetaryAssault</td>
+        <td><a href="../systems/tharkad/index.html" class="action-link">Tharkad</a></td>
+        <td>Word of Blake Jihad</td>
+        <td>1 Capital Ships</td>
+        <td><a href="blakist-assault-on-tharkad-3067/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3067</td>
+        <td>FedCom Civil War</td>
+        <td class="font-bold">Kazanka Station Sabotage (Loss of White Cloud)</td>
+        <td>Sabotage</td>
+        <td><a href="../systems/kazanka/index.html" class="action-link">Kazanka</a></td>
+        <td>Draconis Combine-Snow Raven Clash</td>
+        <td>1 Capital Ships</td>
+        <td><a href="destruction-of-white-cloud-kazanka-3067/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3067</td>
+        <td>FedCom Civil War</td>
+        <td class="font-bold">First Battle of New Avalon (Jihad Invasion)</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/new-avalon/index.html" class="action-link">New Avalon</a></td>
+        <td>Word of Blake Jihad</td>
+        <td>5 Capital Ships</td>
+        <td><a href="first-battle-of-new-avalon-3067/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3067</td>
+        <td>FedCom Civil War</td>
+        <td class="font-bold">Blitzkrieg &amp; Fall of Outreach</td>
+        <td>OrbitalAssault</td>
+        <td><a href="../systems/outreach/index.html" class="action-link">Outreach</a></td>
+        <td>Word of Blake Jihad</td>
+        <td>3 Capital Ships</td>
+        <td><a href="fall-of-outreach-3067/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3067</td>
+        <td>FedCom Civil War</td>
+        <td class="font-bold">Operation FERAL: Wolf&#39;s Dragoons Reprisal at Mars</td>
+        <td>OrbitalAssault</td>
+        <td><a href="../systems/terra/index.html" class="action-link">Terra (Sol)</a></td>
+        <td>Word of Blake Jihad</td>
+        <td>3 Capital Ships</td>
+        <td><a href="operation-feral-mars-3067/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3068</td>
+        <td>Jihad</td>
+        <td class="font-bold">Scourging of Galedon V &amp; XCON-73 Tragedy</td>
+        <td>OrbitalBombardment</td>
+        <td><a href="../systems/galedon/index.html" class="action-link">Galedon V</a></td>
+        <td>Word of Blake Jihad / Snow Raven Vengeance</td>
+        <td>5 Capital Ships</td>
+        <td><a href="scourging-of-galedon-v-3068/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3068</td>
+        <td>Jihad</td>
+        <td class="font-bold">Trials for the Lum Naval Shipyards</td>
+        <td>TrialOfPossession</td>
+        <td><a href="../systems/lum/index.html" class="action-link">Lum</a></td>
+        <td>Wars of Reaving (Early Homeworlds Clashes)</td>
+        <td>2 Capital Ships</td>
+        <td><a href="trials-for-lum-shipyards-3068/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3068</td>
+        <td>Jihad</td>
+        <td class="font-bold">Word of Blake Raids on Skye (Feb &amp; Oct 3068)</td>
+        <td>OrbitalAssault</td>
+        <td><a href="../systems/skye/index.html" class="action-link">Skye</a></td>
+        <td>Word of Blake Jihad</td>
+        <td>3 Capital Ships</td>
+        <td><a href="defense-of-skye-3068/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3068</td>
+        <td>Jihad</td>
+        <td class="font-bold">Operation CASE WHITE (ComStar Assault on Terra)</td>
+        <td>NavalEngagement</td>
+        <td><a href="../systems/terra/index.html" class="action-link">Terra (Sol)</a></td>
+        <td>Word of Blake Jihad</td>
+        <td>6 Capital Ships</td>
+        <td><a href="operation-case-white-terra-3068/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3068</td>
+        <td>Jihad</td>
+        <td class="font-bold">Interception of Snow Raven Zeta Transfer</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/york/index.html" class="action-link">York</a></td>
+        <td>Wars of Reaving (Prelude)</td>
+        <td>2 Capital Ships</td>
+        <td><a href="skirmish-at-york-3068/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3069</td>
+        <td>Jihad</td>
+        <td class="font-bold">Word of Blake Raid on Galax Shipyards</td>
+        <td>OrbitalRaid</td>
+        <td><a href="../systems/galax/index.html" class="action-link">Galax</a></td>
+        <td>Word of Blake Jihad</td>
+        <td>1 Capital Ships</td>
+        <td><a href="raid-on-galax-shipyards-3069/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3069</td>
+        <td>Jihad</td>
+        <td class="font-bold">Scouring of Dante</td>
+        <td>OrbitalBombardment</td>
+        <td><a href="../systems/dante/index.html" class="action-link">Dante</a></td>
+        <td>Word of Blake Jihad / Outworlds Campaign</td>
+        <td>1 Capital Ships</td>
+        <td><a href="scouring-of-dante-3069/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3070</td>
+        <td>Jihad</td>
+        <td class="font-bold">Renegade FWLN Ambush near Shiloh</td>
+        <td>NavalIntercept</td>
+        <td><a href="../systems/shiloh/index.html" class="action-link">Shiloh</a></td>
+        <td>Word of Blake Jihad</td>
+        <td>3 Capital Ships</td>
+        <td><a href="ambush-near-shiloh-3070/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3070</td>
+        <td>Jihad</td>
+        <td class="font-bold">Word of Blake Invasion of Sian</td>
+        <td>PlanetaryAssault</td>
+        <td><a href="../systems/sian/index.html" class="action-link">Sian</a></td>
+        <td>Word of Blake Jihad</td>
+        <td>4 Capital Ships</td>
+        <td><a href="blakist-assault-on-sian-3070/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3070</td>
+        <td>Jihad</td>
+        <td class="font-bold">Fall of Hesperus II (3070 Blakist Assault)</td>
+        <td>PlanetaryAssault</td>
+        <td><a href="../systems/hesperus-ii/index.html" class="action-link">Hesperus II</a></td>
+        <td>Word of Blake Jihad</td>
+        <td>2 Capital Ships</td>
+        <td><a href="skirmish-at-hesperus-ii-3070/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3070</td>
+        <td>Jihad</td>
+        <td class="font-bold">Liberation of Tukayyid (Rasalhague &amp; Dominion)</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/tukayyid/index.html" class="action-link">Tukayyid</a></td>
+        <td>Word of Blake Jihad</td>
+        <td>3 Capital Ships</td>
+        <td><a href="liberation-of-tukayyid-3070/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3070</td>
+        <td>Jihad</td>
+        <td class="font-bold">Battles of Lum (3070 Viper Conquest &amp; Raven Counterstrike)</td>
+        <td>NavalEngagement</td>
+        <td><a href="../systems/lum/index.html" class="action-link">Lum</a></td>
+        <td>Wars of Reaving</td>
+        <td>8 Capital Ships</td>
+        <td><a href="second-battle-of-lum-3070/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3070</td>
+        <td>Jihad</td>
+        <td class="font-bold">Steel Viper Ambush over Strana Mechty</td>
+        <td>NavalEngagement</td>
+        <td><a href="../systems/strana-mechty/index.html" class="action-link">Strana Mechty</a></td>
+        <td>Wars of Reaving</td>
+        <td>4 Capital Ships</td>
+        <td><a href="strana-mechty-zalman-raid-3070/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3071</td>
+        <td>Jihad</td>
+        <td class="font-bold">Battle of Lum (Emerald Talon Destruction)</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/lum/index.html" class="action-link">Lum</a></td>
+        <td>Wars of Reaving</td>
+        <td>5 Capital Ships</td>
+        <td><a href="battle-of-lum-emerald-talon-3071/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3071</td>
+        <td>Jihad</td>
+        <td class="font-bold">Blakist Suicide Jump Ambush at Dante</td>
+        <td>Ambush</td>
+        <td><a href="../systems/dante/index.html" class="action-link">Dante</a></td>
+        <td>Word of Blake Jihad</td>
+        <td>2 Capital Ships</td>
+        <td><a href="omniss-seed-attack-dante-3071/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3071</td>
+        <td>Jihad</td>
+        <td class="font-bold">Battle of Toland (Wars of Reaving)</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/toland/index.html" class="action-link">Toland</a></td>
+        <td>Wars of Reaving (Hellion Strikes)</td>
+        <td>3 Capital Ships</td>
+        <td><a href="battle-of-toland-3071/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3072</td>
+        <td>Jihad</td>
+        <td class="font-bold">Battle of Benjamin (Jihad DCA Losses)</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/benjamin/index.html" class="action-link">Benjamin</a></td>
+        <td>Word of Blake Jihad</td>
+        <td>4 Capital Ships</td>
+        <td><a href="battle-of-benjamin-3072/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3072</td>
+        <td>Jihad</td>
+        <td class="font-bold">Task Force Copernicus Liberation of Donegal</td>
+        <td>PlanetaryAssault</td>
+        <td><a href="../systems/donegal/index.html" class="action-link">Donegal</a></td>
+        <td>Word of Blake Jihad</td>
+        <td>1 Capital Ships</td>
+        <td><a href="battle-of-donegal-3072/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3072</td>
+        <td>Jihad</td>
+        <td class="font-bold">Naval Action over Markesan (L1 LaGrange Point)</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/markesan/index.html" class="action-link">Markesan</a></td>
+        <td>Word of Blake Jihad</td>
+        <td>2 Capital Ships</td>
+        <td><a href="battle-of-markesan-3072/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3072</td>
+        <td>Jihad</td>
+        <td class="font-bold">Battle of Vantaa (Ice Hellion Defeat)</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/vantaa/index.html" class="action-link">Vantaa</a></td>
+        <td>Wars of Reaving / Ice Hellion Incursion</td>
+        <td>3 Capital Ships</td>
+        <td><a href="battle-of-vantaa-3072/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3072</td>
+        <td>Jihad</td>
+        <td class="font-bold">Fifth FedCom Nuclear Blockade Run at New Avalon</td>
+        <td>NavalEngagement</td>
+        <td><a href="../systems/new-avalon/index.html" class="action-link">New Avalon</a></td>
+        <td>Word of Blake Jihad</td>
+        <td>3 Capital Ships</td>
+        <td><a href="new-avalon-blockade-run-3072/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3072</td>
+        <td>Jihad</td>
+        <td class="font-bold">Word of Blake Raid on Arc-Royal</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/arc-royal/index.html" class="action-link">Arc-Royal</a></td>
+        <td>Word of Blake Jihad</td>
+        <td>5 Capital Ships</td>
+        <td><a href="raid-on-arc-royal-3072/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3072</td>
+        <td>Jihad</td>
+        <td class="font-bold">Pursuit at Avon: Severen Leroux vs. Urizen II</td>
+        <td>NavalEngagement</td>
+        <td><a href="../systems/avon/index.html" class="action-link">Avon</a></td>
+        <td>Word of Blake Jihad / Black Dragon Uprising</td>
+        <td>2 Capital Ships</td>
+        <td><a href="battle-of-avon-3072/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3072</td>
+        <td>Jihad</td>
+        <td class="font-bold">Nova Cat Trial of Annihilation Assault on Luthien</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/luthien/index.html" class="action-link">Luthien</a></td>
+        <td>Word of Blake Jihad</td>
+        <td>5 Capital Ships</td>
+        <td><a href="battle-of-luthien-3072/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3072</td>
+        <td>Jihad</td>
+        <td class="font-bold">Battle of Salonika (3072)</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/salonika/index.html" class="action-link">Salonika</a></td>
+        <td>Wars of Reaving</td>
+        <td>5 Capital Ships</td>
+        <td><a href="battle-of-salonika-3072/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3072</td>
+        <td>Jihad</td>
+        <td class="font-bold">Battle of Tamaron (18 October 3072)</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/tamaron/index.html" class="action-link">Tamaron</a></td>
+        <td>Wars of Reaving</td>
+        <td>6 Capital Ships</td>
+        <td><a href="battle-of-tamaron-3072/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3072</td>
+        <td>Jihad</td>
+        <td class="font-bold">Liberation of Tharkad &amp; Capture of LCS Invincible</td>
+        <td>NavalEngagement</td>
+        <td><a href="../systems/tharkad/index.html" class="action-link">Tharkad</a></td>
+        <td>Word of Blake Jihad</td>
+        <td>4 Capital Ships</td>
+        <td><a href="liberation-of-tharkad-3072/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3073</td>
+        <td>Jihad</td>
+        <td class="font-bold">Blood Spirit &amp; Cloud Cobra Actions over Albion</td>
+        <td>OrbitalBombardment</td>
+        <td><a href="../systems/albion/index.html" class="action-link">Albion</a></td>
+        <td>Wars of Reaving</td>
+        <td>3 Capital Ships</td>
+        <td><a href="battle-of-albion-3073/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3073</td>
+        <td>Jihad</td>
+        <td class="font-bold">Battle of Foster (Scorpion Relief Fleet)</td>
+        <td>NavalEngagement</td>
+        <td><a href="../systems/foster/index.html" class="action-link">Foster</a></td>
+        <td>Wars of Reaving</td>
+        <td>7 Capital Ships</td>
+        <td><a href="battle-of-foster-3073/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3073</td>
+        <td>Jihad</td>
+        <td class="font-bold">Steiner&#39;s Folly: Cloud Cobra Assault on Tanis</td>
+        <td>NavalEngagement</td>
+        <td><a href="../systems/tanis/index.html" class="action-link">Tanis</a></td>
+        <td>Wars of Reaving</td>
+        <td>5 Capital Ships</td>
+        <td><a href="battle-of-tanis-3073/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3073</td>
+        <td>Jihad</td>
+        <td class="font-bold">Vengeance on Vinton</td>
+        <td>OrbitalAssault</td>
+        <td><a href="../systems/vinton/index.html" class="action-link">Vinton</a></td>
+        <td>Wars of Reaving</td>
+        <td>6 Capital Ships</td>
+        <td><a href="battle-of-vinton-3073/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3073</td>
+        <td>Jihad</td>
+        <td class="font-bold">Star Adder Counterattack at Priori Moon Opal</td>
+        <td>NavalEngagement</td>
+        <td><a href="../systems/priori/index.html" class="action-link">Priori</a></td>
+        <td>Wars of Reaving</td>
+        <td>4 Capital Ships</td>
+        <td><a href="priori-campaign-3073/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3073</td>
+        <td>Jihad</td>
+        <td class="font-bold">Bandit &amp; Scorpion Actions at Waypoint 531</td>
+        <td>NavalEngagement</td>
+        <td><a href="../systems/waypoint-531/index.html" class="action-link">Waypoint 531</a></td>
+        <td>Wars of Reaving</td>
+        <td>3 Capital Ships</td>
+        <td><a href="waypoint-531-actions-3073/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3073</td>
+        <td>Jihad</td>
+        <td class="font-bold">York Blockade Ambush (Destruction of CDS Titanic)</td>
+        <td>NavalEngagement</td>
+        <td><a href="../systems/york/index.html" class="action-link">York</a></td>
+        <td>Wars of Reaving</td>
+        <td>4 Capital Ships</td>
+        <td><a href="york-blockade-titanic-3073/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3074</td>
+        <td>Jihad</td>
+        <td class="font-bold">Battle of Skye (June 3074 Defense)</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/skye/index.html" class="action-link">Skye</a></td>
+        <td>Word of Blake Jihad</td>
+        <td>2 Capital Ships</td>
+        <td><a href="battle-of-skye-3074/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3074</td>
+        <td>Jihad</td>
+        <td class="font-bold">Trial of Annihilation at Tamaron</td>
+        <td>NavalEngagement</td>
+        <td><a href="../systems/tamaron/index.html" class="action-link">Tamaron</a></td>
+        <td>Wars of Reaving</td>
+        <td>5 Capital Ships</td>
+        <td><a href="invasion-of-tamaron-3074/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3074</td>
+        <td>Jihad</td>
+        <td class="font-bold">Liberation of Coventry (March 3074)</td>
+        <td>PlanetaryAssault</td>
+        <td><a href="../systems/coventry/index.html" class="action-link">Coventry</a></td>
+        <td>Word of Blake Jihad</td>
+        <td>3 Capital Ships</td>
+        <td><a href="liberation-of-coventry-3074/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3075</td>
+        <td>Jihad</td>
+        <td class="font-bold">Battle of Brusett (June 3075)</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/brusett/index.html" class="action-link">Brusett</a></td>
+        <td>Word of Blake Jihad / FedSuns-Taurian War</td>
+        <td>2 Capital Ships</td>
+        <td><a href="battle-of-brusett-3075/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3076</td>
+        <td>Jihad</td>
+        <td class="font-bold">Battles for Dyev (Coalition Blockade &amp; WoB Relief Sortie)</td>
+        <td>NavalEngagement</td>
+        <td><a href="../systems/dyev/index.html" class="action-link">Dyev</a></td>
+        <td>Word of Blake Jihad</td>
+        <td>6 Capital Ships</td>
+        <td><a href="battle-of-dyev-3076/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3076</td>
+        <td>Jihad</td>
+        <td class="font-bold">Intercept of SLS McKenna&#39;s Pride over Strana Mechty</td>
+        <td>NavalEngagement</td>
+        <td><a href="../systems/strana-mechty/index.html" class="action-link">Strana Mechty</a></td>
+        <td>Wars of Reaving</td>
+        <td>4 Capital Ships</td>
+        <td><a href="skirmish-at-strana-mechty-mckennas-pride-3076/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3077</td>
+        <td>Jihad</td>
+        <td class="font-bold">Coalition Disaster at Chara (22 September 3077)</td>
+        <td>NavalEngagement</td>
+        <td><a href="../systems/chara/index.html" class="action-link">Chara</a></td>
+        <td>Word of Blake Jihad</td>
+        <td>3 Capital Ships</td>
+        <td><a href="battle-of-chara-3077/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3077</td>
+        <td>Jihad</td>
+        <td class="font-bold">Capellan Assault on Halloran V (Loss of CSS Franco Martell)</td>
+        <td>OrbitalAssault</td>
+        <td><a href="../systems/halloran-v/index.html" class="action-link">Halloran V</a></td>
+        <td>Word of Blake Jihad</td>
+        <td>1 Capital Ships</td>
+        <td><a href="battle-of-halloran-v-3077/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3077</td>
+        <td>Jihad</td>
+        <td class="font-bold">Battle of Hean (May 3077)</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/hean/index.html" class="action-link">Hean</a></td>
+        <td>Word of Blake Jihad (Coalition Advance)</td>
+        <td>2 Capital Ships</td>
+        <td><a href="battle-of-hean-3077/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3078</td>
+        <td>Jihad</td>
+        <td class="font-bold">Word of Blake Ambush at Luyten 68-28 (Station 23)</td>
+        <td>Ambush</td>
+        <td><a href="../systems/luyten-68-28/index.html" class="action-link">Luyten 68-28</a></td>
+        <td>Word of Blake Jihad</td>
+        <td>1 Capital Ships</td>
+        <td><a href="ambush-at-luyten-68-28-3078/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3078</td>
+        <td>Jihad</td>
+        <td class="font-bold">Liberation of Bryant (Nadir SDS Action)</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/bryant/index.html" class="action-link">Bryant</a></td>
+        <td>Word of Blake Jihad (Operation SCOUR Prelude)</td>
+        <td>3 Capital Ships</td>
+        <td><a href="battle-of-bryant-3078/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3078</td>
+        <td>Jihad</td>
+        <td class="font-bold">Battle of New Home (April 3078 Ambush)</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/new-home/index.html" class="action-link">New Home</a></td>
+        <td>Word of Blake Jihad</td>
+        <td>4 Capital Ships</td>
+        <td><a href="battle-of-new-home-3078/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3078</td>
+        <td>Jihad</td>
+        <td class="font-bold">Operation SCOUR: Coalition Naval Assault on Terra &amp; Titan Yards</td>
+        <td>PlanetaryAssault</td>
+        <td><a href="../systems/terra/index.html" class="action-link">Terra (Sol)</a></td>
+        <td>Word of Blake Jihad (Liberation of Terra)</td>
+        <td>44 Capital Ships</td>
+        <td><a href="operation-scour-terra-3078/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3079</td>
+        <td>Jihad</td>
+        <td class="font-bold">Zenith Jump Point Ambush at Ohrenson</td>
+        <td>NavalIntercept</td>
+        <td><a href="../systems/ohrenson/index.html" class="action-link">Ohrenson</a></td>
+        <td>Word of Blake Jihad (Post-SCOUR Shadow Division Remnants)</td>
+        <td>1 Capital Ships</td>
+        <td><a href="ambush-at-ohrenson-3079/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3079</td>
+        <td>Jihad</td>
+        <td class="font-bold">Trojan Horse Ambush over Oriente</td>
+        <td>NavalIntercept</td>
+        <td><a href="../systems/oriente/index.html" class="action-link">Oriente</a></td>
+        <td>Jihad Aftermath (Bloody Tricentennial)</td>
+        <td>2 Capital Ships</td>
+        <td><a href="trojan-horse-over-oriente-3079/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3080</td>
+        <td>Jihad</td>
+        <td class="font-bold">Abjuration Action at Roche</td>
+        <td>TrialOfPossession</td>
+        <td><a href="../systems/roche/index.html" class="action-link">Roche</a></td>
+        <td>Wars of Reaving (Abjuration of Clan Goliath Scorpion)</td>
+        <td>3 Capital Ships</td>
+        <td><a href="battle-of-roche-shipyards-3080/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3081</td>
+        <td>Republic Era</td>
+        <td class="font-bold">Regulan Task Force Executioner Assault on Circinus</td>
+        <td>PlanetaryAssault</td>
+        <td><a href="../systems/circinus/index.html" class="action-link">Circinus</a></td>
+        <td>Jihad Aftermath (Regulan Scourging)</td>
+        <td>1 Capital Ships</td>
+        <td><a href="assault-on-circinus-3081/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3084</td>
+        <td>Republic Era</td>
+        <td class="font-bold">Battle of Colleen (Annihilation of Clan Blood Spirit)</td>
+        <td>PlanetaryAssault</td>
+        <td><a href="../systems/colleen/index.html" class="action-link">Colleen</a></td>
+        <td>Wars of Reaving (Annihilation of Clan Blood Spirit)</td>
+        <td>3 Capital Ships</td>
+        <td><a href="battle-of-colleen-3084/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3088</td>
+        <td>Republic Era</td>
+        <td class="font-bold">Hanseatic League Defense of Novgorod (Loss of CSA Pegasus)</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/novgorod/index.html" class="action-link">Novgorod</a></td>
+        <td>Wars of Reaving / Hanseatic Expedition</td>
+        <td>1 Capital Ships</td>
+        <td><a href="battle-of-novgorod-3088/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3099</td>
+        <td>Republic Era</td>
+        <td class="font-bold">Raid on Bikini Atoll (Destruction of DCS Amber Lotus)</td>
+        <td>OrbitalRaid</td>
+        <td><a href="../systems/bikini-atoll/index.html" class="action-link">Bikini Atoll</a></td>
+        <td>Wars of the Republic Era (Rasalhague Dominion - Combine Naval Skirmish)</td>
+        <td>2 Capital Ships</td>
+        <td><a href="raid-on-bikini-atoll-3099/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3100</td>
+        <td>Republic Era</td>
+        <td class="font-bold">Battle of Rasalhague (Destruction of CGB Ursa Major)</td>
+        <td>NavalEngagement</td>
+        <td><a href="../systems/rasalhague/index.html" class="action-link">Rasalhague</a></td>
+        <td>Second Combine-Dominion War</td>
+        <td>5 Capital Ships</td>
+        <td><a href="battle-of-rasalhague-3100/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3100</td>
+        <td>Republic Era</td>
+        <td class="font-bold">Assault on Trondheim (DCS Draconis Rift Insertion)</td>
+        <td>PlanetaryAssault</td>
+        <td><a href="../systems/trondheim/index.html" class="action-link">Trondheim</a></td>
+        <td>Second Combine-Dominion War</td>
+        <td>1 Capital Ships</td>
+        <td><a href="battle-of-trondheim-3100/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3134</td>
+        <td>Dark Age</td>
+        <td class="font-bold">Operation Lodestone: Battle of Skye</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/skye/index.html" class="action-link">Skye</a></td>
+        <td>Dark Age (Operation Lodestone / Skye Campaign)</td>
+        <td>2 Capital Ships</td>
+        <td><a href="battle-of-skye-3134/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3144</td>
+        <td>Dark Age</td>
+        <td class="font-bold">The Palmyra Disaster</td>
+        <td>PlanetaryAssault</td>
+        <td><a href="../systems/palmyra/index.html" class="action-link">Palmyra</a></td>
+        <td>Dark Age (Combine-FedSuns War)</td>
+        <td>2 Capital Ships</td>
+        <td><a href="palmyra-disaster-3144/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3146</td>
+        <td>Dark Age</td>
+        <td class="font-bold">The Marlette Deception &amp; Loss of CCS Ilsa Hyung</td>
+        <td>PlanetaryAssault</td>
+        <td><a href="../systems/marlette/index.html" class="action-link">Marlette</a></td>
+        <td>Dark Age (Capellan-Federated Suns War)</td>
+        <td>1 Capital Ships</td>
+        <td><a href="battle-of-marlette-3146/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3146</td>
+        <td>Dark Age</td>
+        <td class="font-bold">Operation Azure Temple (New Avalon Evac Sortie)</td>
+        <td>NavalIntercept</td>
+        <td><a href="../systems/new-avalon/index.html" class="action-link">New Avalon</a></td>
+        <td>Dark Age (Combine-FedSuns War)</td>
+        <td>1 Capital Ships</td>
+        <td><a href="operation-azure-temple-new-avalon-3146/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3151</td>
+        <td>ilClan Era</td>
+        <td class="font-bold">Ice Storm Naval Star Deployment at Barlow&#39;s End</td>
+        <td>ShowOfForce</td>
+        <td><a href="../systems/barlows-end/index.html" class="action-link">Barlow&#39;s End</a></td>
+        <td>ilClan Era (Snow Raven Advance toward Terra)</td>
+        <td>5 Capital Ships</td>
+        <td><a href="raven-alliance-deployment-barlows-end-3151/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3151</td>
+        <td>ilClan Era</td>
+        <td class="font-bold">Operation Nostos: Battle of Terra (Nadir Jump Point)</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/terra/index.html" class="action-link">Terra (Sol)</a></td>
+        <td>ilClan Trial / Liberation of Terra</td>
+        <td>10 Capital Ships</td>
+        <td><a href="battle-of-terra-nadir-3151/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3151</td>
+        <td>ilClan Era</td>
+        <td class="font-bold">Naval Duel over Dieron (Aleisha Kris vs Draconis Rift)</td>
+        <td>NavalEngagement</td>
+        <td><a href="../systems/dieron/index.html" class="action-link">Dieron</a></td>
+        <td>Capellan Wave Three / Operation ACCIPITER</td>
+        <td>2 Capital Ships</td>
+        <td><a href="naval-duel-over-dieron-3151/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3151</td>
+        <td>ilClan Era</td>
+        <td class="font-bold">Operation Birthright: Battle of Terra (Zenith Jump Point)</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/terra/index.html" class="action-link">Terra (Sol)</a></td>
+        <td>ilClan Trial / Liberation of Terra</td>
+        <td>5 Capital Ships</td>
+        <td><a href="battle-of-terra-zenith-3151/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3151</td>
+        <td>ilClan Era</td>
+        <td class="font-bold">The Death Ride of the Republic (Task Force Walk&#252;re over Geneva)</td>
+        <td>FleetEngagement</td>
+        <td><a href="../systems/terra/index.html" class="action-link">Terra (Sol)</a></td>
+        <td>ilClan Trial / Defense of Terra</td>
+        <td>9 Capital Ships</td>
+        <td><a href="death-ride-of-the-republic-terra-3151/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+      <tr>
+        <td class="text-bright font-bold">3152</td>
+        <td>ilClan Era</td>
+        <td class="font-bold">Heaven Fire on Liao (Bombardment of Chang-an)</td>
+        <td>OrbitalBombardment</td>
+        <td><a href="../systems/liao/index.html" class="action-link">Liao</a></td>
+        <td>ilClan Era / Capellan-Star League War</td>
+        <td>2 Capital Ships</td>
+        <td><a href="orbital-assault-on-liao-3152/index.html" class="action-link">&gt;&gt; ORDER OF BATTLE</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="margin-top: 0.75rem; text-align: center;">
+  <button type="button" class="terminal-btn" data-table-more="events-table" style="display: none;">[ + SHOW 100 MORE ENGAGEMENTS ]</button>
+</div>
+
+  </main>
+  <footer class="terminal-footer">
+    <div class="nav-divider">--------------------------------------------------------------------------------</div>
+    <div class="footer-text">BATTLETECH CAPITAL WARSHIP MEMORIAL REGISTRY // ARCHIVAL TERMINAL ACCESS</div>
+    <div class="footer-sub">ALL HISTORICAL SPECIFICATIONS GROUNDED IN VERIFIED SOURCE MATERIAL VIA LORE MCP.</div>
+  </footer>
+</div>
+<script src="../assets/filter.js" defer></script>
+</body>
+</html>
