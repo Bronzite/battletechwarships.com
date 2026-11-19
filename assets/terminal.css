@@ -471,6 +471,17 @@ body::after {
 .status-mia { color: var(--status-mia); border: 1px solid var(--status-mia); }
 .status-retired { color: var(--status-retired); border: 1px solid var(--status-retired); }
 
+.unid-tag {
+  display: inline-block;
+  color: var(--accent-aux);
+  border: 1px dashed var(--accent-aux);
+  padding: 0.08rem 0.4rem;
+  font-size: 0.74rem;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+  margin-right: 0.35rem;
+}
+
 /* Typography & Helpers */
 .text-bright { color: var(--text-bright); }
 .text-dim { color: var(--text-dim); }

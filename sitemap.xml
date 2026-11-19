@@ -47,6 +47,7 @@
   <url><loc>https://battletechwarships.com/classes/fredasa/</loc></url>
   <url><loc>https://battletechwarships.com/classes/impavido/</loc></url>
   <url><loc>https://battletechwarships.com/classes/inazuma/</loc></url>
+  <url><loc>https://battletechwarships.com/classes/kaga/</loc></url>
   <url><loc>https://battletechwarships.com/classes/kimagure-surprise/</loc></url>
   <url><loc>https://battletechwarships.com/classes/kimagure/</loc></url>
   <url><loc>https://battletechwarships.com/classes/kirishima/</loc></url>
@@ -237,6 +238,7 @@
   <url><loc>https://battletechwarships.com/vessels/cjf-gold-talon/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/cjf-green-kestrel/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/cjf-green-lantern/</loc></url>
+  <url><loc>https://battletechwarships.com/vessels/cjf-hawk-eye/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/cjf-hawker/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/cjf-hunters-pride/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/cjf-ironhold-provider/</loc></url>
@@ -272,12 +274,14 @@
   <url><loc>https://battletechwarships.com/vessels/csa-pegasus/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/csa-pompeii/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/csa-sovereign-right/</loc></url>
+  <url><loc>https://battletechwarships.com/vessels/csa-star-fire/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/csa-stellar-serpent/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/csa-tehuantepec/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/csa-vicious-fang/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/csa-warlock/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/csa-yorktown/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/csf-caleuche/</loc></url>
+  <url><loc>https://battletechwarships.com/vessels/csf-coriolis/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/csf-megalodon/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/csj-griffin/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/csj-obsidian/</loc></url>
@@ -412,7 +416,6 @@
   <url><loc>https://battletechwarships.com/vessels/dc-nikolai-tesla/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/dcs-akiko/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/dcs-alshain/</loc></url>
-  <url><loc>https://battletechwarships.com/vessels/dcs-amakaze/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/dcs-amber-lotus/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/dcs-an-ting/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/dcs-benjamin/</loc></url>
@@ -439,6 +442,7 @@
   <url><loc>https://battletechwarships.com/vessels/dcs-new-samarkand/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/dcs-night-of-agony/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/dcs-omodaka/</loc></url>
+  <url><loc>https://battletechwarships.com/vessels/dcs-pride-of-kurita/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/dcs-pride-of-new-samarkand/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/dcs-radstadt/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/dcs-ryu/</loc></url>
@@ -523,6 +527,7 @@
   <url><loc>https://battletechwarships.com/vessels/fwls-albert-marik/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/fwls-araneida/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/fwls-arcturus/</loc></url>
+  <url><loc>https://battletechwarships.com/vessels/fwls-attica/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/fwls-bedevere/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/fwls-bismarck/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/fwls-bors/</loc></url>
@@ -535,6 +540,7 @@
   <url><loc>https://battletechwarships.com/vessels/fwls-devastator/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/fwls-francisco/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/fwls-galahad/</loc></url>
+  <url><loc>https://battletechwarships.com/vessels/fwls-gawain/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/fwls-haptopoda/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/fwls-hector/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/fwls-hippolyta/</loc></url>
@@ -543,9 +549,11 @@
   <url><loc>https://battletechwarships.com/vessels/fwls-janos-marik/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/fwls-karelia/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/fwls-karka/</loc></url>
+  <url><loc>https://battletechwarships.com/vessels/fwls-kay/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/fwls-kumbha/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/fwls-kustarachnae/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/fwls-lancelot/</loc></url>
+  <url><loc>https://battletechwarships.com/vessels/fwls-leodegrance/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/fwls-majestic/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/fwls-makara/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/fwls-menelaus/</loc></url>
@@ -563,8 +571,10 @@
   <url><loc>https://battletechwarships.com/vessels/fwls-ripper/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/fwls-samhain/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/fwls-santorini/</loc></url>
+  <url><loc>https://battletechwarships.com/vessels/fwls-scorpion/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/fwls-skulker/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/fwls-sorunda/</loc></url>
+  <url><loc>https://battletechwarships.com/vessels/fwls-sparta/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/fwls-thessaly/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/fwls-tirana/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/fwls-tomain/</loc></url>
@@ -682,9 +692,11 @@
   <url><loc>https://battletechwarships.com/vessels/shining-claw/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/simas-osis/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/sls-admiral-perry/</loc></url>
+  <url><loc>https://battletechwarships.com/vessels/sls-alacrity-reunification/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/sls-anchorage/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/sls-ark-royal/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/sls-arkhangelsk/</loc></url>
+  <url><loc>https://battletechwarships.com/vessels/sls-ashantii/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/sls-bamborough/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/sls-bishops-regret/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/sls-bismarck/</loc></url>
@@ -703,7 +715,6 @@
   <url><loc>https://battletechwarships.com/vessels/sls-enterprise/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/sls-europa/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/sls-fearless/</loc></url>
-  <url><loc>https://battletechwarships.com/vessels/sls-fred-t-berry/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/sls-golden-hind/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/sls-hancock/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/sls-havana/</loc></url>
@@ -739,6 +750,7 @@
   <url><loc>https://battletechwarships.com/vessels/sls-prinz-eugen/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/sls-protecteur/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/sls-queribus/</loc></url>
+  <url><loc>https://battletechwarships.com/vessels/sls-rapacious/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/sls-red-bluff/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/sls-rex/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/sls-rhodan/</loc></url>
@@ -759,6 +771,7 @@
   <url><loc>https://battletechwarships.com/vessels/sls-surprise/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/sls-surveillante/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/sls-talitha-flyer/</loc></url>
+  <url><loc>https://battletechwarships.com/vessels/sls-terra-nova/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/sls-theodor-logan/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/sls-tripitz/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/sls-ukraine/</loc></url>
@@ -768,6 +781,7 @@
   <url><loc>https://battletechwarships.com/vessels/sls-vengeance-amaris/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/sls-victory/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/sls-wales/</loc></url>
+  <url><loc>https://battletechwarships.com/vessels/sls-wellesley/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/sls-white-cloud/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/sls-whitewind/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/sls-william-halsey/</loc></url>
@@ -784,6 +798,7 @@
   <url><loc>https://battletechwarships.com/vessels/tcs-parilicium/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/tcs-parin/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/tcs-pinard/</loc></url>
+  <url><loc>https://battletechwarships.com/vessels/tcs-samantha-calderon/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/tcs-vendetta/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/tcw-vandenberg/</loc></url>
   <url><loc>https://battletechwarships.com/vessels/ths-black-lion/</loc></url>
@@ -876,7 +891,9 @@
   <url><loc>https://battletechwarships.com/events/battle-of-deep-periphery-serpent-3059/</loc></url>
   <url><loc>https://battletechwarships.com/events/battle-of-delavan-2797/</loc></url>
   <url><loc>https://battletechwarships.com/events/battle-of-denebola-2785/</loc></url>
+  <url><loc>https://battletechwarships.com/events/battle-of-devin-boneyard-2772/</loc></url>
   <url><loc>https://battletechwarships.com/events/battle-of-dieron-2787/</loc></url>
+  <url><loc>https://battletechwarships.com/events/battle-of-dieron-november-3077/</loc></url>
   <url><loc>https://battletechwarships.com/events/battle-of-donegal-3072/</loc></url>
   <url><loc>https://battletechwarships.com/events/battle-of-dyev-3076/</loc></url>
   <url><loc>https://battletechwarships.com/events/battle-of-flintoft-2581/</loc></url>
@@ -885,6 +902,7 @@
   <url><loc>https://battletechwarships.com/events/battle-of-halloran-v-3077/</loc></url>
   <url><loc>https://battletechwarships.com/events/battle-of-hean-3077/</loc></url>
   <url><loc>https://battletechwarships.com/events/battle-of-hesperus-ii-3065/</loc></url>
+  <url><loc>https://battletechwarships.com/events/battle-of-hoard-3060/</loc></url>
   <url><loc>https://battletechwarships.com/events/battle-of-huntress-zenith-3060/</loc></url>
   <url><loc>https://battletechwarships.com/events/battle-of-kalidasa-2819/</loc></url>
   <url><loc>https://battletechwarships.com/events/battle-of-lum-emerald-talon-3071/</loc></url>
@@ -913,6 +931,7 @@
   <url><loc>https://battletechwarships.com/events/battle-of-skondia-2787/</loc></url>
   <url><loc>https://battletechwarships.com/events/battle-of-skye-3074/</loc></url>
   <url><loc>https://battletechwarships.com/events/battle-of-skye-3134/</loc></url>
+  <url><loc>https://battletechwarships.com/events/battle-of-sudeten-3136/</loc></url>
   <url><loc>https://battletechwarships.com/events/battle-of-tamaron-3072/</loc></url>
   <url><loc>https://battletechwarships.com/events/battle-of-tanis-3073/</loc></url>
   <url><loc>https://battletechwarships.com/events/battle-of-tentativa-2577/</loc></url>
@@ -927,18 +946,26 @@
   <url><loc>https://battletechwarships.com/events/battle-of-trondheim-3100/</loc></url>
   <url><loc>https://battletechwarships.com/events/battle-of-vantaa-3072/</loc></url>
   <url><loc>https://battletechwarships.com/events/battle-of-vinton-3073/</loc></url>
+  <url><loc>https://battletechwarships.com/events/battle-of-wayside-v-3058/</loc></url>
   <url><loc>https://battletechwarships.com/events/battle-of-wazan-2787/</loc></url>
   <url><loc>https://battletechwarships.com/events/battle-of-york-3063/</loc></url>
   <url><loc>https://battletechwarships.com/events/blakist-assault-on-sian-3070/</loc></url>
   <url><loc>https://battletechwarships.com/events/blakist-assault-on-tharkad-3067/</loc></url>
+  <url><loc>https://battletechwarships.com/events/boarding-at-courchevel-3063/</loc></url>
+  <url><loc>https://battletechwarships.com/events/bombardment-of-algedi-3072/</loc></url>
   <url><loc>https://battletechwarships.com/events/bombardment-of-edo-3050/</loc></url>
+  <url><loc>https://battletechwarships.com/events/bombardment-of-sandhurst-2777/</loc></url>
   <url><loc>https://battletechwarships.com/events/calloway-vi-incident-2763/</loc></url>
   <url><loc>https://battletechwarships.com/events/capture-of-black-talon-butler-3064/</loc></url>
   <url><loc>https://battletechwarships.com/events/capture-of-fss-chesterton-panpour-2577/</loc></url>
+  <url><loc>https://battletechwarships.com/events/clash-near-chainelaine-isles-3055/</loc></url>
+  <url><loc>https://battletechwarships.com/events/clash-of-the-titan-shipyards-3151/</loc></url>
   <url><loc>https://battletechwarships.com/events/collision-over-vakarel-2572/</loc></url>
   <url><loc>https://battletechwarships.com/events/death-ride-of-the-republic-terra-3151/</loc></url>
   <url><loc>https://battletechwarships.com/events/defense-of-skye-3068/</loc></url>
+  <url><loc>https://battletechwarships.com/events/destruction-of-columbus-station-3068/</loc></url>
   <url><loc>https://battletechwarships.com/events/destruction-of-finmark-yards-2791/</loc></url>
+  <url><loc>https://battletechwarships.com/events/destruction-of-robert-davion-kathil-3062/</loc></url>
   <url><loc>https://battletechwarships.com/events/destruction-of-white-cloud-kazanka-3067/</loc></url>
   <url><loc>https://battletechwarships.com/events/fall-of-outreach-3067/</loc></url>
   <url><loc>https://battletechwarships.com/events/fifth-andurien-war-andurien-2838/</loc></url>
@@ -946,15 +973,17 @@
   <url><loc>https://battletechwarships.com/events/first-battle-of-huntress-3060/</loc></url>
   <url><loc>https://battletechwarships.com/events/first-battle-of-new-avalon-3067/</loc></url>
   <url><loc>https://battletechwarships.com/events/first-battle-of-tikonov-2832/</loc></url>
+  <url><loc>https://battletechwarships.com/events/first-battle-of-tukayyid-3068/</loc></url>
+  <url><loc>https://battletechwarships.com/events/fortress-wall-misjump-dieron-3137/</loc></url>
   <url><loc>https://battletechwarships.com/events/invasion-of-tamaron-3074/</loc></url>
   <url><loc>https://battletechwarships.com/events/kentares-supply-interdiction-2431/</loc></url>
   <url><loc>https://battletechwarships.com/events/liberation-of-coventry-3074/</loc></url>
+  <url><loc>https://battletechwarships.com/events/liberation-of-dieron-2775/</loc></url>
   <url><loc>https://battletechwarships.com/events/liberation-of-nusakan-2775/</loc></url>
   <url><loc>https://battletechwarships.com/events/liberation-of-robinson-2814/</loc></url>
   <url><loc>https://battletechwarships.com/events/liberation-of-terra-firma-2409/</loc></url>
   <url><loc>https://battletechwarships.com/events/liberation-of-tharkad-3072/</loc></url>
   <url><loc>https://battletechwarships.com/events/liberation-of-tukayyid-3070/</loc></url>
-  <url><loc>https://battletechwarships.com/events/malagrotta-crisis-2573/</loc></url>
   <url><loc>https://battletechwarships.com/events/massacre-of-epsilon-indi-2767/</loc></url>
   <url><loc>https://battletechwarships.com/events/naval-duel-over-dieron-3151/</loc></url>
   <url><loc>https://battletechwarships.com/events/new-avalon-blockade-run-3072/</loc></url>
@@ -971,6 +1000,7 @@
   <url><loc>https://battletechwarships.com/events/orbital-attack-on-klathandu-iv-2814/</loc></url>
   <url><loc>https://battletechwarships.com/events/palmyra-disaster-3144/</loc></url>
   <url><loc>https://battletechwarships.com/events/priori-campaign-3073/</loc></url>
+  <url><loc>https://battletechwarships.com/events/pursuit-at-epsilon-eridani-3141/</loc></url>
   <url><loc>https://battletechwarships.com/events/raid-on-arc-royal-3072/</loc></url>
   <url><loc>https://battletechwarships.com/events/raid-on-bikini-atoll-3099/</loc></url>
   <url><loc>https://battletechwarships.com/events/raid-on-galax-shipyards-3069/</loc></url>
@@ -982,6 +1012,7 @@
   <url><loc>https://battletechwarships.com/events/sabotage-of-sls-nebraska-2765/</loc></url>
   <url><loc>https://battletechwarships.com/events/scourging-of-galedon-v-3068/</loc></url>
   <url><loc>https://battletechwarships.com/events/scouring-of-dante-3069/</loc></url>
+  <url><loc>https://battletechwarships.com/events/scuttling-of-rss-flatus-dubhe-3149/</loc></url>
   <url><loc>https://battletechwarships.com/events/second-battle-of-lum-3070/</loc></url>
   <url><loc>https://battletechwarships.com/events/siege-of-hesperus-ii-2853/</loc></url>
   <url><loc>https://battletechwarships.com/events/siege-of-horsham-2582/</loc></url>
@@ -1037,9 +1068,11 @@
   <url><loc>https://battletechwarships.com/systems/butler/</loc></url>
   <url><loc>https://battletechwarships.com/systems/callison/</loc></url>
   <url><loc>https://battletechwarships.com/systems/calloway-vi/</loc></url>
+  <url><loc>https://battletechwarships.com/systems/camelot-command/</loc></url>
   <url><loc>https://battletechwarships.com/systems/canopus-iv/</loc></url>
   <url><loc>https://battletechwarships.com/systems/caph/</loc></url>
   <url><loc>https://battletechwarships.com/systems/cartago/</loc></url>
+  <url><loc>https://battletechwarships.com/systems/chainelaine-isles/</loc></url>
   <url><loc>https://battletechwarships.com/systems/chara/</loc></url>
   <url><loc>https://battletechwarships.com/systems/chatham/</loc></url>
   <url><loc>https://battletechwarships.com/systems/chesterton/</loc></url>
@@ -1053,6 +1086,7 @@
   <url><loc>https://battletechwarships.com/systems/columbus/</loc></url>
   <url><loc>https://battletechwarships.com/systems/connaught/</loc></url>
   <url><loc>https://battletechwarships.com/systems/corey/</loc></url>
+  <url><loc>https://battletechwarships.com/systems/courchevel/</loc></url>
   <url><loc>https://battletechwarships.com/systems/coventry/</loc></url>
   <url><loc>https://battletechwarships.com/systems/ctesiphon/</loc></url>
   <url><loc>https://battletechwarships.com/systems/dahar-iv/</loc></url>
@@ -1060,10 +1094,12 @@
   <url><loc>https://battletechwarships.com/systems/deep-periphery-serpent/</loc></url>
   <url><loc>https://battletechwarships.com/systems/delavan/</loc></url>
   <url><loc>https://battletechwarships.com/systems/denebola/</loc></url>
+  <url><loc>https://battletechwarships.com/systems/devin/</loc></url>
   <url><loc>https://battletechwarships.com/systems/diefenbaker/</loc></url>
   <url><loc>https://battletechwarships.com/systems/dieron/</loc></url>
   <url><loc>https://battletechwarships.com/systems/donegal/</loc></url>
   <url><loc>https://battletechwarships.com/systems/dover/</loc></url>
+  <url><loc>https://battletechwarships.com/systems/dubhe/</loc></url>
   <url><loc>https://battletechwarships.com/systems/dyev/</loc></url>
   <url><loc>https://battletechwarships.com/systems/eden/</loc></url>
   <url><loc>https://battletechwarships.com/systems/elbar/</loc></url>
@@ -1091,6 +1127,7 @@
   <url><loc>https://battletechwarships.com/systems/hector/</loc></url>
   <url><loc>https://battletechwarships.com/systems/hellgate/</loc></url>
   <url><loc>https://battletechwarships.com/systems/hesperus-ii/</loc></url>
+  <url><loc>https://battletechwarships.com/systems/hoard/</loc></url>
   <url><loc>https://battletechwarships.com/systems/homer/</loc></url>
   <url><loc>https://battletechwarships.com/systems/horsham/</loc></url>
   <url><loc>https://battletechwarships.com/systems/huntress/</loc></url>
@@ -1186,6 +1223,7 @@
   <url><loc>https://battletechwarships.com/systems/strana-mechty/</loc></url>
   <url><loc>https://battletechwarships.com/systems/strato-domingo/</loc></url>
   <url><loc>https://battletechwarships.com/systems/suda-bay/</loc></url>
+  <url><loc>https://battletechwarships.com/systems/sudeten/</loc></url>
   <url><loc>https://battletechwarships.com/systems/symington/</loc></url>
   <url><loc>https://battletechwarships.com/systems/syrma/</loc></url>
   <url><loc>https://battletechwarships.com/systems/talitha/</loc></url>
@@ -1219,23 +1257,27 @@
   <url><loc>https://battletechwarships.com/systems/vinton/</loc></url>
   <url><loc>https://battletechwarships.com/systems/way-station-7/</loc></url>
   <url><loc>https://battletechwarships.com/systems/waypoint-531/</loc></url>
+  <url><loc>https://battletechwarships.com/systems/wayside-v/</loc></url>
   <url><loc>https://battletechwarships.com/systems/wazan/</loc></url>
   <url><loc>https://battletechwarships.com/systems/woodstock/</loc></url>
   <url><loc>https://battletechwarships.com/systems/york/</loc></url>
   <url><loc>https://battletechwarships.com/systems/zanderij/</loc></url>
   <url><loc>https://battletechwarships.com/citations/35700-25-years-of-art-and-fiction/</loc></url>
   <url><loc>https://battletechwarships.com/citations/abonfireofworlds/</loc></url>
+  <url><loc>https://battletechwarships.com/citations/aquestionofsurvival/</loc></url>
   <url><loc>https://battletechwarships.com/citations/arendingoffalcons/</loc></url>
   <url><loc>https://battletechwarships.com/citations/35011-aerotech-2-revised/</loc></url>
   <url><loc>https://battletechwarships.com/citations/35410-battle-of-tukayyid-3rd-printing/</loc></url>
   <url><loc>https://battletechwarships.com/citations/betrayalofideals/</loc></url>
   <url><loc>https://battletechwarships.com/citations/battletech-blood-of-the-isle/</loc></url>
   <url><loc>https://battletechwarships.com/citations/bloodoftheisle/</loc></url>
+  <url><loc>https://battletechwarships.com/citations/stemoh-tbochb-00/</loc></url>
   <url><loc>https://battletechwarships.com/citations/childrenofkerensky/</loc></url>
   <url><loc>https://battletechwarships.com/citations/battletech-legends-dagger-point/</loc></url>
   <url><loc>https://battletechwarships.com/citations/darkage-republic-worlds/</loc></url>
   <url><loc>https://battletechwarships.com/citations/35023-dawn-of-the-jihad/</loc></url>
   <url><loc>https://battletechwarships.com/citations/35904-dominions-divided/</loc></url>
+  <url><loc>https://battletechwarships.com/citations/dragonrising/</loc></url>
   <url><loc>https://battletechwarships.com/citations/elements-of-treason-honor/</loc></url>
   <url><loc>https://battletechwarships.com/citations/elementsoftreason-honor/</loc></url>
   <url><loc>https://battletechwarships.com/citations/battletech-legends-endgame/</loc></url>
@@ -1246,6 +1288,7 @@
   <url><loc>https://battletechwarships.com/citations/35221-era-report-3062/</loc></url>
   <url><loc>https://battletechwarships.com/citations/35223-era-report-3145/</loc></url>
   <url><loc>https://battletechwarships.com/citations/1681-explorer-corps/</loc></url>
+  <url><loc>https://battletechwarships.com/citations/battletech-fall-from-glory-generic/</loc></url>
   <url><loc>https://battletechwarships.com/citations/10974-fedcom-civil-war/</loc></url>
   <url><loc>https://battletechwarships.com/citations/35250-field-manual-3085/</loc></url>
   <url><loc>https://battletechwarships.com/citations/35252-field-manual-3145/</loc></url>
@@ -1265,6 +1308,7 @@
   <url><loc>https://battletechwarships.com/citations/35fr002-field-report-dcms/</loc></url>
   <url><loc>https://battletechwarships.com/citations/35fr004-field-report-fwlm/</loc></url>
   <url><loc>https://battletechwarships.com/citations/35fr005-field-report-laaf/</loc></url>
+  <url><loc>https://battletechwarships.com/citations/35fr006-field-report-periphery/</loc></url>
   <url><loc>https://battletechwarships.com/citations/35235-first-succession-war/</loc></url>
   <url><loc>https://battletechwarships.com/citations/flashpoint/</loc></url>
   <url><loc>https://battletechwarships.com/citations/flightofthefalcon/</loc></url>
@@ -1280,7 +1324,9 @@
   <url><loc>https://battletechwarships.com/citations/35231-historical-reunification-war/</loc></url>
   <url><loc>https://battletechwarships.com/citations/35tp009-historical-turning-points-luzerne/</loc></url>
   <url><loc>https://battletechwarships.com/citations/35tp012-historical-turning-points-new-dallas/</loc></url>
+  <url><loc>https://battletechwarships.com/citations/35450-hot-spots-hinterlands-2nd-print/</loc></url>
   <url><loc>https://battletechwarships.com/citations/35302-hotspots-3072/</loc></url>
+  <url><loc>https://battletechwarships.com/citations/battletech-hounds-at-bay-generic-2024-07-27/</loc></url>
   <url><loc>https://battletechwarships.com/citations/battletech-hour-of-the-wolf/</loc></url>
   <url><loc>https://battletechwarships.com/citations/hourofthewolf/</loc></url>
   <url><loc>https://battletechwarships.com/citations/1624-house-liao-textonly/</loc></url>
@@ -1292,6 +1338,7 @@
   <url><loc>https://battletechwarships.com/citations/35901-ilclan/</loc></url>
   <url><loc>https://battletechwarships.com/citations/35905-ilkhans-eyes-only/</loc></url>
   <url><loc>https://battletechwarships.com/citations/imminentcrisis/</loc></url>
+  <url><loc>https://battletechwarships.com/citations/impetusofwarbyblaineleepardoe/</loc></url>
   <url><loc>https://battletechwarships.com/citations/35308-interstellar-expeditions/</loc></url>
   <url><loc>https://battletechwarships.com/citations/35003-interstellar-players/</loc></url>
   <url><loc>https://battletechwarships.com/citations/isleoftheblessed/</loc></url>
@@ -1308,6 +1355,7 @@
   <url><loc>https://battletechwarships.com/citations/killzonebattlecorpsanthologyvolume7/</loc></url>
   <url><loc>https://battletechwarships.com/citations/battletech-land-of-dreams/</loc></url>
   <url><loc>https://battletechwarships.com/citations/landofdreamsfoundingoftheclansbookthree/</loc></url>
+  <url><loc>https://battletechwarships.com/citations/35701-legends/</loc></url>
   <url><loc>https://battletechwarships.com/citations/35240-masters-and-minions/</loc></url>
   <url><loc>https://battletechwarships.com/citations/35028-mercenaries-supplmental-update/</loc></url>
   <url><loc>https://battletechwarships.com/citations/nogreaterhonorthecompleteeridanilighthorsechronicles/</loc></url>
@@ -1331,12 +1379,14 @@
   <url><loc>https://battletechwarships.com/citations/shadowsofwartwilightoftheclansbooksix/</loc></url>
   <url><loc>https://battletechwarships.com/citations/35900-shattered-fortress/</loc></url>
   <url><loc>https://battletechwarships.com/citations/1712-shattered-sphere/</loc></url>
+  <url><loc>https://battletechwarships.com/citations/e-cat36101-shrapnel-the-official-battletech-magazine-issue-12/</loc></url>
   <url><loc>https://battletechwarships.com/citations/shrapnel-14-generic/</loc></url>
   <url><loc>https://battletechwarships.com/citations/shrapnel-16-generic/</loc></url>
   <url><loc>https://battletechwarships.com/citations/shrapnel-20-generic-3-14-25/</loc></url>
   <url><loc>https://battletechwarships.com/citations/e-cat36239-shrapnel-the-official-battletech-magazine-issue-21/</loc></url>
   <url><loc>https://battletechwarships.com/citations/e-cat36240-shrapnel-the-official-battletech-magazine-issue-22/</loc></url>
   <url><loc>https://battletechwarships.com/citations/e-cat36242-shrapnel-the-official-battletech-magazine-issue-24/</loc></url>
+  <url><loc>https://battletechwarships.com/citations/shrapnel-25-generic-2026-06-01/</loc></url>
   <url><loc>https://battletechwarships.com/citations/e-cat36093-shrapnel-the-official-battletech-magazine-issue-04-4f44fa58d50e1928c44b51261dd03cd093/</loc></url>
   <url><loc>https://battletechwarships.com/citations/1630-star-league-sourcebook/</loc></url>
   <url><loc>https://battletechwarships.com/citations/battletech-legends-storms-of-fate/</loc></url>
@@ -1344,8 +1394,10 @@
   <url><loc>https://battletechwarships.com/citations/35004-strategic-operations-2011/</loc></url>
   <url><loc>https://battletechwarships.com/citations/battletech-strength-of-the-pack-part-six-generic-2024-09-01/</loc></url>
   <url><loc>https://battletechwarships.com/citations/swordandfiretwilightoftheclansbookfive/</loc></url>
+  <url><loc>https://battletechwarships.com/citations/35902-tamar-rising/</loc></url>
   <url><loc>https://battletechwarships.com/citations/10992-technical-readout-3026-revised/</loc></url>
   <url><loc>https://battletechwarships.com/citations/35007-technical-readout-3057-revised/</loc></url>
+  <url><loc>https://battletechwarships.com/citations/35009-technical-readout-3067/</loc></url>
   <url><loc>https://battletechwarships.com/citations/35130-technical-readout-3075-second-printing/</loc></url>
   <url><loc>https://battletechwarships.com/citations/35131-technical-readout-3085/</loc></url>
   <url><loc>https://battletechwarships.com/citations/35133-technical-readout-3145/</loc></url>
@@ -1368,6 +1420,7 @@
   <url><loc>https://battletechwarships.com/citations/35s001-tro-3085-supplemental/</loc></url>
   <url><loc>https://battletechwarships.com/citations/35tr004-tro-3145-federated-suns/</loc></url>
   <url><loc>https://battletechwarships.com/citations/35tr010-tro-golden-century/</loc></url>
+  <url><loc>https://battletechwarships.com/citations/35tp019-turning-points-epsilon-eridani/</loc></url>
   <url><loc>https://battletechwarships.com/citations/35702-universe/</loc></url>
   <url><loc>https://battletechwarships.com/citations/35234-wars-of-the-republic-era/</loc></url>
   <url><loc>https://battletechwarships.com/citations/35xt017-xtro-boondoggles/</loc></url>
