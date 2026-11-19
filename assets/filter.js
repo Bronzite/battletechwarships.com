@@ -61,14 +61,20 @@ document.addEventListener('DOMContentLoaded', function () {
         selects.forEach(function (sel) {
           const val = sel.value.trim().toLowerCase();
           if (!val) return;
-          const colIdx = parseInt(sel.getAttribute('data-col'), 10);
+          const rowAttr = sel.getAttribute('data-row-attr');
           const matchMode = (sel.getAttribute('data-match') || 'exact').toLowerCase();
-          const cell = row.cells && row.cells[colIdx];
-          const cellText = cell ? cell.textContent.trim().toLowerCase() : '';
-          if (matchMode === 'contains') {
-            if (!cellText.includes(val)) matches = false;
+          let targetText = '';
+          if (rowAttr) {
+            targetText = (row.getAttribute(rowAttr) || '').trim().toLowerCase();
           } else {
-            if (cellText !== val) matches = false;
+            const colIdx = parseInt(sel.getAttribute('data-col'), 10);
+            const cell = row.cells && row.cells[colIdx];
+            targetText = cell ? cell.textContent.trim().toLowerCase() : '';
+          }
+          if (matchMode === 'contains') {
+            if (!targetText.includes(val)) matches = false;
+          } else {
+            if (targetText !== val) matches = false;
           }
         });
       }

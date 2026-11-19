@@ -482,6 +482,33 @@ body::after {
   margin-right: 0.35rem;
 }
 
+.lineage-sub {
+  margin-top: 0.22rem;
+  font-size: 0.75rem;
+  line-height: 1.35;
+}
+
+.lineage-badge {
+  display: inline-block;
+  padding: 0.05rem 0.38rem;
+  font-size: 0.7rem;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+  margin-right: 0.35rem;
+  border-radius: 2px;
+}
+
+.lineage-variant {
+  color: var(--accent-aux);
+  border: 1px dashed var(--accent-aux);
+}
+
+.lineage-base {
+  color: var(--text-bright);
+  border: 1px solid var(--border-dim);
+  background-color: var(--bg-panel);
+}
+
 /* Typography & Helpers */
 .text-bright { color: var(--text-bright); }
 .text-dim { color: var(--text-dim); }

@@ -77,13 +77,18 @@
     <option value="Star League">STAR LEAGUE</option>
     <option value="Succession Wars">SUCCESSION WARS</option>
   </select>
+  <select class="terminal-select" data-table-select="classes-table" data-row-attr="data-lineage" aria-label="Filter by class lineage">
+    <option value="">ALL LINEAGES</option>
+    <option value="base">BASE &amp; STANDALONE DESIGNS</option>
+    <option value="subclass">SUBCLASSES &amp; VARIANTS</option>
+  </select>
   <span class="filter-count text-dim" data-table-status="classes-table" data-noun="CLASSES">SHOWING ALL 105 CLASSES</span>
 </div>
 <div class="table-responsive">
   <table class="terminal-table" id="classes-table" data-noun="CLASSES">
     <thead>
       <tr>
-        <th>CLASS NAME</th>
+        <th>CLASS DESIGNATION</th>
         <th>CLASSIFICATION</th>
         <th>TECH BASE</th>
         <th>ERA</th>
@@ -96,8 +101,8 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td class="font-bold text-bright">Aegis</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Aegis</div></td>
         <td>Heavy Cruiser</td>
         <td>Star League / Clan</td>
         <td>Age of War</td>
@@ -108,8 +113,8 @@
         <td>62 Hulls</td>
         <td><a href="aegis/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Agamemnon</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Agamemnon</div></td>
         <td>Heavy Cruiser</td>
         <td>Inner Sphere</td>
         <td>Clan Invasion</td>
@@ -120,8 +125,8 @@
         <td>4 Hulls</td>
         <td><a href="agamemnon/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Athena</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Athena</div></td>
         <td>Cruiser</td>
         <td>Inner Sphere</td>
         <td>Age of War</td>
@@ -132,8 +137,8 @@
         <td>2 Hulls</td>
         <td><a href="athena/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Atreus</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Atreus</div></td>
         <td>Battleship</td>
         <td>Star League / Inner Sphere</td>
         <td>Age of War</td>
@@ -144,8 +149,8 @@
         <td>5 Hulls</td>
         <td><a href="atreus/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Avalon</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Avalon</div></td>
         <td>Cruiser</td>
         <td>Inner Sphere (Federated Suns)</td>
         <td>Clan Invasion</td>
@@ -156,8 +161,8 @@
         <td>7 Hulls</td>
         <td><a href="avalon/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Avatar</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Avatar</div></td>
         <td>Heavy Cruiser</td>
         <td>Star League</td>
         <td>Age of War</td>
@@ -168,8 +173,8 @@
         <td>1 Hulls</td>
         <td><a href="avatar/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Baron</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Baron</div></td>
         <td>Destroyer</td>
         <td>Star League / Terran Hegemony</td>
         <td>Age of War</td>
@@ -180,20 +185,8 @@
         <td>4 Hulls</td>
         <td><a href="baron/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Black Lion</td>
-        <td>Battlecruiser</td>
-        <td>Inner Sphere</td>
-        <td>Age of War</td>
-        <td>2315</td>
-        <td>720,000 Tons</td>
-        <td>0</td>
-        <td>0</td>
-        <td>7 Hulls</td>
-        <td><a href="black-lion-i/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
-      </tr>
-      <tr>
-        <td class="font-bold text-bright">Black Lion</td>
+      <tr data-lineage="subclass">
+        <td><div class="font-bold text-bright">Black Lion</div><div class="lineage-sub"><span class="lineage-badge lineage-variant">[SUBCLASS / VARIANT]</span><span class="text-dim">DERIVED FROM:</span> <a href="black-lion-i/index.html" class="action-link">Black Lion I</a></div></td>
         <td>Battlecruiser</td>
         <td>Star League / Clan</td>
         <td>Star League</td>
@@ -201,11 +194,23 @@
         <td>810,000 Tons</td>
         <td>4</td>
         <td>20</td>
-        <td>14 Hulls</td>
+        <td>19 Hulls</td>
         <td><a href="black-lion/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Bonaventure</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Black Lion I</div><div class="lineage-sub"><span class="lineage-badge lineage-base">[BASE DESIGN // 1 SUBCLASS]</span></div></td>
+        <td>Battlecruiser</td>
+        <td>Inner Sphere</td>
+        <td>Age of War</td>
+        <td>2315</td>
+        <td>720,000 Tons</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2 Hulls</td>
+        <td><a href="black-lion-i/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
+      </tr>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Bonaventure</div></td>
         <td>Corvette</td>
         <td>Star League / Terran Hegemony</td>
         <td>Age of War</td>
@@ -216,8 +221,8 @@
         <td>1 Hulls</td>
         <td><a href="bonaventure/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Bug-Eye</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Bug-Eye</div></td>
         <td>Surveillance WarShip</td>
         <td>Inner Sphere (Star League)</td>
         <td>Star League</td>
@@ -228,8 +233,8 @@
         <td>2 Hulls</td>
         <td><a href="bug-eye/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Cameron</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Cameron</div></td>
         <td>Battlecruiser</td>
         <td>Star League / Clan</td>
         <td>Star League</td>
@@ -240,8 +245,8 @@
         <td>16 Hulls</td>
         <td><a href="cameron/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Carrack</td>
+      <tr data-lineage="subclass">
+        <td><div class="font-bold text-bright">Carrack (Clan Merchant Conversion)</div><div class="lineage-sub"><span class="lineage-badge lineage-variant">[SUBCLASS / VARIANT]</span><span class="text-dim">DERIVED FROM:</span> <a href="carrack/index.html" class="action-link">Carrack (Naval Transport)</a></div></td>
         <td>Transport</td>
         <td>Clan</td>
         <td>Succession Wars</td>
@@ -252,8 +257,8 @@
         <td>0 Hulls</td>
         <td><a href="carrack-merchant/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Carrack</td>
+      <tr data-lineage="subclass">
+        <td><div class="font-bold text-bright">Carrack (Naval Transport)</div><div class="lineage-sub"><span class="lineage-badge lineage-variant">[SUBCLASS / VARIANT]</span><span class="text-dim">DERIVED FROM:</span> <a href="sylvester/index.html" class="action-link">Sylvester</a><span class="lineage-badge lineage-base" style="margin-left: 0.35rem;">[+1 SUB-VARIANT]</span></div></td>
         <td>Transport</td>
         <td>Star League / Clan</td>
         <td>[UNSPECIFIED]</td>
@@ -264,8 +269,8 @@
         <td>32 Hulls</td>
         <td><a href="carrack/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Carson</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Carson</div></td>
         <td>Destroyer</td>
         <td>Star League</td>
         <td>Star League</td>
@@ -276,20 +281,8 @@
         <td>2 Hulls</td>
         <td><a href="carson/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Commonwealth</td>
-        <td>Light Cruiser</td>
-        <td>Inner Sphere</td>
-        <td>Star League</td>
-        <td>2765</td>
-        <td>700,000 Tons</td>
-        <td>6</td>
-        <td>18</td>
-        <td>2 Hulls</td>
-        <td><a href="commonwealth-ii/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
-      </tr>
-      <tr>
-        <td class="font-bold text-bright">Commonwealth</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Commonwealth (Block I)</div><div class="lineage-sub"><span class="lineage-badge lineage-base">[BASE DESIGN // 1 SUBCLASS]</span></div></td>
         <td>Light Cruiser</td>
         <td>Inner Sphere</td>
         <td>Age of War</td>
@@ -300,8 +293,20 @@
         <td>5 Hulls</td>
         <td><a href="commonwealth/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Concordat</td>
+      <tr data-lineage="subclass">
+        <td><div class="font-bold text-bright">Commonwealth (Block II)</div><div class="lineage-sub"><span class="lineage-badge lineage-variant">[SUBCLASS / VARIANT]</span><span class="text-dim">DERIVED FROM:</span> <a href="commonwealth/index.html" class="action-link">Commonwealth (Block I)</a></div></td>
+        <td>Light Cruiser</td>
+        <td>Inner Sphere</td>
+        <td>Star League</td>
+        <td>2765</td>
+        <td>700,000 Tons</td>
+        <td>6</td>
+        <td>18</td>
+        <td>2 Hulls</td>
+        <td><a href="commonwealth-ii/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
+      </tr>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Concordat</div></td>
         <td>Frigate</td>
         <td>Inner Sphere (Taurian Concordat)</td>
         <td>Age of War</td>
@@ -312,20 +317,8 @@
         <td>4 Hulls</td>
         <td><a href="concordat/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Congress</td>
-        <td>Frigate</td>
-        <td>Inner Sphere</td>
-        <td>Age of War</td>
-        <td>2542</td>
-        <td>760,000 Tons</td>
-        <td>2</td>
-        <td>6</td>
-        <td>1 Hulls</td>
-        <td><a href="congress-d/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
-      </tr>
-      <tr>
-        <td class="font-bold text-bright">Congress</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Congress</div><div class="lineage-sub"><span class="lineage-badge lineage-base">[BASE DESIGN // 1 SUBCLASS]</span></div></td>
         <td>Frigate</td>
         <td>Star League / Clan</td>
         <td>Age of War</td>
@@ -336,8 +329,20 @@
         <td>24 Hulls</td>
         <td><a href="congress/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Conqueror</td>
+      <tr data-lineage="subclass">
+        <td><div class="font-bold text-bright">Congress D (Davion Variant)</div><div class="lineage-sub"><span class="lineage-badge lineage-variant">[SUBCLASS / VARIANT]</span><span class="text-dim">DERIVED FROM:</span> <a href="congress/index.html" class="action-link">Congress</a></div></td>
+        <td>Frigate</td>
+        <td>Inner Sphere</td>
+        <td>Age of War</td>
+        <td>2542</td>
+        <td>760,000 Tons</td>
+        <td>2</td>
+        <td>6</td>
+        <td>1 Hulls</td>
+        <td><a href="congress-d/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
+      </tr>
+      <tr data-lineage="subclass">
+        <td><div class="font-bold text-bright">Conqueror</div><div class="lineage-sub"><span class="lineage-badge lineage-variant">[SUBCLASS / VARIANT]</span><span class="text-dim">DERIVED FROM:</span> <a href="kimagure/index.html" class="action-link">Kimagure</a></div></td>
         <td>Battlecruiser</td>
         <td>Clan</td>
         <td>Clan Invasion</td>
@@ -348,8 +353,8 @@
         <td>2 Hulls</td>
         <td><a href="conqueror/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Corone</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Corone</div></td>
         <td>Destroyer</td>
         <td>Clan</td>
         <td>Succession Wars</td>
@@ -360,8 +365,8 @@
         <td>3 Hulls</td>
         <td><a href="corone/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Cruiser</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Cruiser</div></td>
         <td>Cruiser</td>
         <td>Inner Sphere</td>
         <td>Age of War</td>
@@ -372,8 +377,8 @@
         <td>0 Hulls</td>
         <td><a href="cruiser/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Dante</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Dante</div></td>
         <td>Frigate</td>
         <td>Star League / Inner Sphere (ComStar)</td>
         <td>Succession Wars</td>
@@ -384,8 +389,8 @@
         <td>5 Hulls</td>
         <td><a href="dante/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Dart</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Dart</div></td>
         <td>Light Cruiser</td>
         <td>Star League</td>
         <td>Age of War</td>
@@ -396,20 +401,8 @@
         <td>1 Hulls</td>
         <td><a href="dart/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Davion</td>
-        <td>Destroyer</td>
-        <td>Star League</td>
-        <td>Age of War</td>
-        <td>2552</td>
-        <td>580,000 Tons</td>
-        <td>2</td>
-        <td>18</td>
-        <td>4 Hulls</td>
-        <td><a href="davion-ii/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
-      </tr>
-      <tr>
-        <td class="font-bold text-bright">Davion</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Davion (Block I)</div><div class="lineage-sub"><span class="lineage-badge lineage-base">[BASE DESIGN // 2 SUBCLASSES]</span></div></td>
         <td>Destroyer</td>
         <td>Star League / Inner Sphere</td>
         <td>Age of War</td>
@@ -420,8 +413,20 @@
         <td>6 Hulls</td>
         <td><a href="davion/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Defender</td>
+      <tr data-lineage="subclass">
+        <td><div class="font-bold text-bright">Davion (Block II)</div><div class="lineage-sub"><span class="lineage-badge lineage-variant">[SUBCLASS / VARIANT]</span><span class="text-dim">DERIVED FROM:</span> <a href="davion/index.html" class="action-link">Davion (Block I)</a></div></td>
+        <td>Destroyer</td>
+        <td>Star League</td>
+        <td>Age of War</td>
+        <td>2552</td>
+        <td>580,000 Tons</td>
+        <td>2</td>
+        <td>18</td>
+        <td>4 Hulls</td>
+        <td><a href="davion-ii/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
+      </tr>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Defender</div></td>
         <td>Battlecruiser</td>
         <td>Inner Sphere</td>
         <td>Age of War</td>
@@ -432,8 +437,8 @@
         <td>1 Hulls</td>
         <td><a href="defender/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Dreadnought</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Dreadnought</div></td>
         <td>Battleship</td>
         <td>Star League / Terran Alliance</td>
         <td>Age of War</td>
@@ -444,8 +449,8 @@
         <td>1 Hulls</td>
         <td><a href="dreadnought/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Du Shi Wang</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Du Shi Wang</div></td>
         <td>Battleship</td>
         <td>Inner Sphere</td>
         <td>Age of War</td>
@@ -456,8 +461,8 @@
         <td>4 Hulls</td>
         <td><a href="du-shi-wang/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Eagle</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Eagle</div></td>
         <td>Frigate</td>
         <td>Inner Sphere</td>
         <td>Clan Invasion</td>
@@ -468,8 +473,8 @@
         <td>10 Hulls</td>
         <td><a href="eagle/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Enterprise</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Enterprise (Super Carrier Prototype)</div></td>
         <td>Carrier</td>
         <td>Inner Sphere (Experimental)</td>
         <td>Star League</td>
@@ -480,8 +485,8 @@
         <td>1 Hulls</td>
         <td><a href="enterprise/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Essex</td>
+      <tr data-lineage="subclass">
+        <td><div class="font-bold text-bright">Essex</div><div class="lineage-sub"><span class="lineage-badge lineage-variant">[SUBCLASS / VARIANT]</span><span class="text-dim">DERIVED FROM:</span> <a href="essex-i/index.html" class="action-link">Essex I</a></div></td>
         <td>Destroyer</td>
         <td>Star League / Clan</td>
         <td>Star League</td>
@@ -489,11 +494,11 @@
         <td>620,000 Tons</td>
         <td>0</td>
         <td>10</td>
-        <td>32 Hulls</td>
+        <td>31 Hulls</td>
         <td><a href="essex/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Essex I</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Essex I</div><div class="lineage-sub"><span class="lineage-badge lineage-base">[BASE DESIGN // 1 SUBCLASS]</span></div></td>
         <td>Destroyer</td>
         <td>Inner Sphere</td>
         <td>Age of War</td>
@@ -501,11 +506,11 @@
         <td>560,000 Tons</td>
         <td>0</td>
         <td>0</td>
-        <td>5 Hulls</td>
+        <td>6 Hulls</td>
         <td><a href="essex-i/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Farragut</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Farragut</div></td>
         <td>Battleship</td>
         <td>Star League</td>
         <td>Age of War</td>
@@ -516,8 +521,8 @@
         <td>1 Hulls</td>
         <td><a href="farragut/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Faslane</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Faslane</div></td>
         <td>YardShip</td>
         <td>Inner Sphere (ComStar)</td>
         <td>Succession Wars</td>
@@ -528,8 +533,8 @@
         <td>6 Hulls</td>
         <td><a href="faslane/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Feng Huang</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Feng Huang</div></td>
         <td>Cruiser</td>
         <td>Inner Sphere</td>
         <td>Clan Invasion</td>
@@ -540,8 +545,8 @@
         <td>5 Hulls</td>
         <td><a href="feng-huang/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Fox</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Fox</div></td>
         <td>Corvette</td>
         <td>Inner Sphere (Federated Commonwealth)</td>
         <td>Clan Invasion</td>
@@ -552,8 +557,8 @@
         <td>21 Hulls</td>
         <td><a href="fox/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Fredasa</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Fredasa</div></td>
         <td>Corvette / Raider</td>
         <td>Clan</td>
         <td>Succession Wars</td>
@@ -564,8 +569,8 @@
         <td>13 Hulls</td>
         <td><a href="fredasa/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Impavido</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Impavido</div></td>
         <td>Destroyer</td>
         <td>Inner Sphere (Free Worlds League)</td>
         <td>Clan Invasion</td>
@@ -576,8 +581,8 @@
         <td>5 Hulls</td>
         <td><a href="impavido/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Inazuma</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Inazuma</div></td>
         <td>Corvette</td>
         <td>Inner Sphere</td>
         <td>Clan Invasion</td>
@@ -588,8 +593,8 @@
         <td>4 Hulls</td>
         <td><a href="inazuma/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Kaga</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Kaga</div></td>
         <td>Carrier</td>
         <td>Inner Sphere</td>
         <td>[UNSPECIFIED]</td>
@@ -600,8 +605,8 @@
         <td>1 Hulls</td>
         <td><a href="kaga/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Kimagure</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Kimagure</div><div class="lineage-sub"><span class="lineage-badge lineage-base">[BASE DESIGN // 2 SUBCLASSES]</span></div></td>
         <td>Cruiser</td>
         <td>Star League</td>
         <td>Star League</td>
@@ -612,8 +617,8 @@
         <td>2 Hulls</td>
         <td><a href="kimagure/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Kimagure Surprise</td>
+      <tr data-lineage="subclass">
+        <td><div class="font-bold text-bright">Kimagure Surprise (Light Mass Driver Testbed)</div><div class="lineage-sub"><span class="lineage-badge lineage-variant">[SUBCLASS / VARIANT]</span><span class="text-dim">DERIVED FROM:</span> <a href="kimagure/index.html" class="action-link">Kimagure</a></div></td>
         <td>Cruiser</td>
         <td>Inner Sphere (Experimental)</td>
         <td>Star League</td>
@@ -624,8 +629,8 @@
         <td>1 Hulls</td>
         <td><a href="kimagure-surprise/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Kirishima</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Kirishima</div></td>
         <td>Cruiser</td>
         <td>Inner Sphere (Draconis Combine)</td>
         <td>Clan Invasion</td>
@@ -636,8 +641,8 @@
         <td>4 Hulls</td>
         <td><a href="kirishima/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Kyushu</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Kyushu</div></td>
         <td>Frigate</td>
         <td>Inner Sphere (Draconis Combine)</td>
         <td>Clan Invasion</td>
@@ -648,20 +653,8 @@
         <td>9 Hulls</td>
         <td><a href="kyushu/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">League</td>
-        <td>Destroyer</td>
-        <td>Inner Sphere</td>
-        <td>Star League</td>
-        <td>2768</td>
-        <td>550,000 Tons</td>
-        <td>2</td>
-        <td>12</td>
-        <td>4 Hulls</td>
-        <td><a href="league-ii/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
-      </tr>
-      <tr>
-        <td class="font-bold text-bright">League</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">League (Block I)</div><div class="lineage-sub"><span class="lineage-badge lineage-base">[BASE DESIGN // 1 SUBCLASS]</span></div></td>
         <td>Destroyer</td>
         <td>Inner Sphere</td>
         <td>Age of War</td>
@@ -672,8 +665,20 @@
         <td>1 Hulls</td>
         <td><a href="league/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Leviathan</td>
+      <tr data-lineage="subclass">
+        <td><div class="font-bold text-bright">League (Block II)</div><div class="lineage-sub"><span class="lineage-badge lineage-variant">[SUBCLASS / VARIANT]</span><span class="text-dim">DERIVED FROM:</span> <a href="league/index.html" class="action-link">League (Block I)</a></div></td>
+        <td>Destroyer</td>
+        <td>Inner Sphere</td>
+        <td>Star League</td>
+        <td>2768</td>
+        <td>550,000 Tons</td>
+        <td>2</td>
+        <td>12</td>
+        <td>4 Hulls</td>
+        <td><a href="league-ii/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
+      </tr>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Leviathan (Heavy Transport)</div><div class="lineage-sub"><span class="lineage-badge lineage-base">[BASE DESIGN // 2 SUBCLASSES]</span></div></td>
         <td>Battleship</td>
         <td>Clan</td>
         <td>Clan Invasion</td>
@@ -684,8 +689,8 @@
         <td>1 Hulls</td>
         <td><a href="leviathan/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Leviathan II</td>
+      <tr data-lineage="subclass">
+        <td><div class="font-bold text-bright">Leviathan II (Battleship Configuration)</div><div class="lineage-sub"><span class="lineage-badge lineage-variant">[SUBCLASS / VARIANT]</span><span class="text-dim">DERIVED FROM:</span> <a href="leviathan/index.html" class="action-link">Leviathan (Heavy Transport)</a><span class="lineage-badge lineage-base" style="margin-left: 0.35rem;">[+1 SUB-VARIANT]</span></div></td>
         <td>Battleship</td>
         <td>Clan</td>
         <td>[UNSPECIFIED]</td>
@@ -696,8 +701,8 @@
         <td>2 Hulls</td>
         <td><a href="leviathan-ii/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Leviathan III</td>
+      <tr data-lineage="subclass">
+        <td><div class="font-bold text-bright">Leviathan III (Production Configuration)</div><div class="lineage-sub"><span class="lineage-badge lineage-variant">[SUBCLASS / VARIANT]</span><span class="text-dim">DERIVED FROM:</span> <a href="leviathan-ii/index.html" class="action-link">Leviathan II (Battleship Configuration)</a></div></td>
         <td>Battleship</td>
         <td>Clan</td>
         <td>Dark Age</td>
@@ -708,8 +713,8 @@
         <td>0 Hulls</td>
         <td><a href="leviathan-iii/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Leviathan Prime</td>
+      <tr data-lineage="subclass">
+        <td><div class="font-bold text-bright">Leviathan Prime</div><div class="lineage-sub"><span class="lineage-badge lineage-variant">[SUBCLASS / VARIANT]</span><span class="text-dim">DERIVED FROM:</span> <a href="leviathan/index.html" class="action-link">Leviathan (Heavy Transport)</a></div></td>
         <td>Battleship</td>
         <td>Clan</td>
         <td>Jihad</td>
@@ -720,8 +725,8 @@
         <td>1 Hulls</td>
         <td><a href="leviathan-prime/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Liberator</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Liberator</div></td>
         <td>Cruiser</td>
         <td>Clan</td>
         <td>Age of War</td>
@@ -732,8 +737,8 @@
         <td>8 Hulls</td>
         <td><a href="liberator/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Lola I</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Lola I</div><div class="lineage-sub"><span class="lineage-badge lineage-base">[BASE DESIGN // 1 SUBCLASS]</span></div></td>
         <td>Destroyer</td>
         <td>Star League / Terran Hegemony</td>
         <td>Age of War</td>
@@ -744,8 +749,8 @@
         <td>4 Hulls</td>
         <td><a href="lola-i/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Lola II</td>
+      <tr data-lineage="subclass">
+        <td><div class="font-bold text-bright">Lola II</div><div class="lineage-sub"><span class="lineage-badge lineage-variant">[SUBCLASS / VARIANT]</span><span class="text-dim">DERIVED FROM:</span> <a href="lola-i/index.html" class="action-link">Lola I</a><span class="lineage-badge lineage-base" style="margin-left: 0.35rem;">[+2 SUB-VARIANTS]</span></div></td>
         <td>Destroyer</td>
         <td>Star League</td>
         <td>Star League</td>
@@ -756,8 +761,8 @@
         <td>0 Hulls</td>
         <td><a href="lola-ii/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Lola III</td>
+      <tr data-lineage="subclass">
+        <td><div class="font-bold text-bright">Lola III</div><div class="lineage-sub"><span class="lineage-badge lineage-variant">[SUBCLASS / VARIANT]</span><span class="text-dim">DERIVED FROM:</span> <a href="lola-ii/index.html" class="action-link">Lola II</a></div></td>
         <td>Destroyer</td>
         <td>Star League / Clan</td>
         <td>Star League</td>
@@ -768,8 +773,8 @@
         <td>49 Hulls</td>
         <td><a href="lola-iii/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Luxor</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Luxor</div></td>
         <td>Heavy Cruiser</td>
         <td>Star League</td>
         <td>Star League</td>
@@ -780,8 +785,8 @@
         <td>6 Hulls</td>
         <td><a href="luxor/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">M-5 Caspar</td>
+      <tr data-lineage="subclass">
+        <td><div class="font-bold text-bright">M-5 Caspar (SDS Capital Drone)</div><div class="lineage-sub"><span class="lineage-badge lineage-variant">[SUBCLASS / VARIANT]</span><span class="text-dim">DERIVED FROM:</span> <a href="lola-ii/index.html" class="action-link">Lola II</a><span class="lineage-badge lineage-base" style="margin-left: 0.35rem;">[+1 SUB-VARIANT]</span></div></td>
         <td>Destroyer</td>
         <td>Inner Sphere</td>
         <td>Star League</td>
@@ -792,8 +797,8 @@
         <td>0 Hulls</td>
         <td><a href="m5-caspar/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">M-5C Caspar</td>
+      <tr data-lineage="subclass">
+        <td><div class="font-bold text-bright">M-5C Caspar (ATAC Command Capital Drone)</div><div class="lineage-sub"><span class="lineage-badge lineage-variant">[SUBCLASS / VARIANT]</span><span class="text-dim">DERIVED FROM:</span> <a href="m5-caspar/index.html" class="action-link">M-5 Caspar (SDS Capital Drone)</a></div></td>
         <td>Destroyer</td>
         <td>Inner Sphere</td>
         <td>Star League</td>
@@ -804,8 +809,8 @@
         <td>0 Hulls</td>
         <td><a href="m5c-caspar/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Mako</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Mako</div></td>
         <td>Corvette</td>
         <td>Star League</td>
         <td>Star League</td>
@@ -816,8 +821,8 @@
         <td>10 Hulls</td>
         <td><a href="mako/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">McKenna</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">McKenna</div></td>
         <td>Battleship</td>
         <td>Star League / Clan</td>
         <td>Star League</td>
@@ -828,8 +833,8 @@
         <td>20 Hulls</td>
         <td><a href="mckenna/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Mjolnir</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Mjolnir</div></td>
         <td>Battlecruiser</td>
         <td>Inner Sphere</td>
         <td>Clan Invasion</td>
@@ -840,8 +845,8 @@
         <td>2 Hulls</td>
         <td><a href="mjolnir/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Molniya</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Molniya</div></td>
         <td>Corvette</td>
         <td>Clan</td>
         <td>Succession Wars</td>
@@ -852,8 +857,8 @@
         <td>1 Hulls</td>
         <td><a href="molniya/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Monsoon</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Monsoon</div></td>
         <td>Battleship</td>
         <td>Star League / Terran Hegemony</td>
         <td>Age of War</td>
@@ -864,20 +869,8 @@
         <td>0 Hulls</td>
         <td><a href="monsoon/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Naga</td>
-        <td>Destroyer</td>
-        <td>Inner Sphere (Experimental)</td>
-        <td>[UNSPECIFIED]</td>
-        <td><span class="text-dim">[UNSPECIFIED IN ARCHIVE]</span></td>
-        <td>540,000 Tons</td>
-        <td>0</td>
-        <td><span class="text-dim">[UNSPECIFIED IN ARCHIVE]</span></td>
-        <td>3 Hulls</td>
-        <td><a href="naga-caspar-ii/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
-      </tr>
-      <tr>
-        <td class="font-bold text-bright">Naga</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Naga</div><div class="lineage-sub"><span class="lineage-badge lineage-base">[BASE DESIGN // 1 SUBCLASS]</span></div></td>
         <td>Destroyer</td>
         <td>Star League</td>
         <td>Star League</td>
@@ -888,20 +881,20 @@
         <td>1 Hulls</td>
         <td><a href="naga/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Narukami</td>
+      <tr data-lineage="subclass">
+        <td><div class="font-bold text-bright">Naga (Caspar II Control Ship)</div><div class="lineage-sub"><span class="lineage-badge lineage-variant">[SUBCLASS / VARIANT]</span><span class="text-dim">DERIVED FROM:</span> <a href="naga/index.html" class="action-link">Naga</a></div></td>
         <td>Destroyer</td>
-        <td>Inner Sphere</td>
-        <td>Star League</td>
-        <td>2770</td>
-        <td>670,000 Tons</td>
-        <td>3</td>
-        <td>12</td>
-        <td>2 Hulls</td>
-        <td><a href="narukami-ii/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
+        <td>Inner Sphere (Experimental)</td>
+        <td>[UNSPECIFIED]</td>
+        <td><span class="text-dim">[UNSPECIFIED IN ARCHIVE]</span></td>
+        <td>540,000 Tons</td>
+        <td>0</td>
+        <td><span class="text-dim">[UNSPECIFIED IN ARCHIVE]</span></td>
+        <td>3 Hulls</td>
+        <td><a href="naga-caspar-ii/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Narukami</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Narukami (Block I)</div><div class="lineage-sub"><span class="lineage-badge lineage-base">[BASE DESIGN // 1 SUBCLASS]</span></div></td>
         <td>Destroyer</td>
         <td>Inner Sphere</td>
         <td>Age of War</td>
@@ -912,8 +905,20 @@
         <td>4 Hulls</td>
         <td><a href="narukami/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">New Syrtis</td>
+      <tr data-lineage="subclass">
+        <td><div class="font-bold text-bright">Narukami (Block II)</div><div class="lineage-sub"><span class="lineage-badge lineage-variant">[SUBCLASS / VARIANT]</span><span class="text-dim">DERIVED FROM:</span> <a href="narukami/index.html" class="action-link">Narukami (Block I)</a></div></td>
+        <td>Destroyer</td>
+        <td>Inner Sphere</td>
+        <td>Star League</td>
+        <td>2770</td>
+        <td>670,000 Tons</td>
+        <td>3</td>
+        <td>12</td>
+        <td>2 Hulls</td>
+        <td><a href="narukami-ii/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
+      </tr>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">New Syrtis</div></td>
         <td>Carrier</td>
         <td>Inner Sphere</td>
         <td>Age of War</td>
@@ -924,20 +929,8 @@
         <td>4 Hulls</td>
         <td><a href="new-syrtis/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Newgrange</td>
-        <td>YardShip</td>
-        <td>Star League</td>
-        <td>Star League</td>
-        <td>2600</td>
-        <td>2,300,000 Tons</td>
-        <td>4</td>
-        <td>0</td>
-        <td>0 Hulls</td>
-        <td><a href="newgrange-iii/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
-      </tr>
-      <tr>
-        <td class="font-bold text-bright">Newgrange</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Newgrange</div><div class="lineage-sub"><span class="lineage-badge lineage-base">[BASE DESIGN // 1 SUBCLASS]</span></div></td>
         <td>YardShip</td>
         <td>Star League</td>
         <td>Star League</td>
@@ -948,8 +941,20 @@
         <td>3 Hulls</td>
         <td><a href="newgrange/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Nightlord</td>
+      <tr data-lineage="subclass">
+        <td><div class="font-bold text-bright">Newgrange III (TRO 3085 YardShip)</div><div class="lineage-sub"><span class="lineage-badge lineage-variant">[SUBCLASS / VARIANT]</span><span class="text-dim">DERIVED FROM:</span> <a href="newgrange/index.html" class="action-link">Newgrange</a></div></td>
+        <td>YardShip</td>
+        <td>Star League</td>
+        <td>Star League</td>
+        <td>2600</td>
+        <td>2,300,000 Tons</td>
+        <td>4</td>
+        <td>0</td>
+        <td>0 Hulls</td>
+        <td><a href="newgrange-iii/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
+      </tr>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Nightlord</div></td>
         <td>Battleship</td>
         <td>Clan</td>
         <td>Succession Wars</td>
@@ -960,8 +965,8 @@
         <td>9 Hulls</td>
         <td><a href="nightlord/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Nightwing</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Nightwing</div></td>
         <td>Surveillance</td>
         <td>Star League</td>
         <td>Age of War</td>
@@ -972,8 +977,8 @@
         <td>0 Hulls</td>
         <td><a href="nightwing/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Peregrine</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Peregrine</div></td>
         <td>Corvette</td>
         <td>Clan</td>
         <td>Succession Wars</td>
@@ -984,8 +989,8 @@
         <td>2 Hulls</td>
         <td><a href="peregrine/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Pinto</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Pinto</div></td>
         <td>Corvette</td>
         <td>Star League</td>
         <td>Age of War</td>
@@ -996,8 +1001,8 @@
         <td>9 Hulls</td>
         <td><a href="pinto/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Potemkin</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Potemkin</div></td>
         <td>Troop Cruiser</td>
         <td>Star League / Clan</td>
         <td>Star League</td>
@@ -1008,8 +1013,8 @@
         <td>33 Hulls</td>
         <td><a href="potemkin/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Quicksilver</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Quicksilver (Clan Mongoose Battleship)</div></td>
         <td>Battleship</td>
         <td>Clan</td>
         <td>[UNSPECIFIED]</td>
@@ -1020,8 +1025,8 @@
         <td>0 Hulls</td>
         <td><a href="quicksilver/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Quixote</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Quixote</div><div class="lineage-sub"><span class="lineage-badge lineage-base">[BASE DESIGN // 1 SUBCLASS]</span></div></td>
         <td>Frigate</td>
         <td>Star League</td>
         <td>Star League</td>
@@ -1032,20 +1037,8 @@
         <td>2 Hulls</td>
         <td><a href="quixote/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Riga</td>
-        <td>Destroyer</td>
-        <td>Star League</td>
-        <td>[UNSPECIFIED]</td>
-        <td><span class="text-dim">[UNSPECIFIED IN ARCHIVE]</span></td>
-        <td>750,000 Tons</td>
-        <td><span class="text-dim">[UNSPECIFIED IN ARCHIVE]</span></td>
-        <td><span class="text-dim">[UNSPECIFIED IN ARCHIVE]</span></td>
-        <td>1 Hulls</td>
-        <td><a href="riga-lf/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
-      </tr>
-      <tr>
-        <td class="font-bold text-bright">Riga</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Riga</div><div class="lineage-sub"><span class="lineage-badge lineage-base">[BASE DESIGN // 2 SUBCLASSES]</span></div></td>
         <td>Frigate</td>
         <td>Star League</td>
         <td>Age of War</td>
@@ -1056,8 +1049,20 @@
         <td>4 Hulls</td>
         <td><a href="riga/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Riga II</td>
+      <tr data-lineage="subclass">
+        <td><div class="font-bold text-bright">Riga I (LF Battery Refit)</div><div class="lineage-sub"><span class="lineage-badge lineage-variant">[SUBCLASS / VARIANT]</span><span class="text-dim">DERIVED FROM:</span> <a href="riga/index.html" class="action-link">Riga</a></div></td>
+        <td>Destroyer</td>
+        <td>Star League</td>
+        <td>[UNSPECIFIED]</td>
+        <td><span class="text-dim">[UNSPECIFIED IN ARCHIVE]</span></td>
+        <td>750,000 Tons</td>
+        <td><span class="text-dim">[UNSPECIFIED IN ARCHIVE]</span></td>
+        <td><span class="text-dim">[UNSPECIFIED IN ARCHIVE]</span></td>
+        <td>1 Hulls</td>
+        <td><a href="riga-lf/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
+      </tr>
+      <tr data-lineage="subclass">
+        <td><div class="font-bold text-bright">Riga II</div><div class="lineage-sub"><span class="lineage-badge lineage-variant">[SUBCLASS / VARIANT]</span><span class="text-dim">DERIVED FROM:</span> <a href="riga/index.html" class="action-link">Riga</a><span class="lineage-badge lineage-base" style="margin-left: 0.35rem;">[+1 SUB-VARIANT]</span></div></td>
         <td>Destroyer / Carrier</td>
         <td>Inner Sphere</td>
         <td>Star League</td>
@@ -1068,8 +1073,8 @@
         <td>0 Hulls</td>
         <td><a href="riga-ii/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Robinson</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Robinson (Block I)</div></td>
         <td>Transport</td>
         <td>Inner Sphere</td>
         <td>Age of War</td>
@@ -1080,20 +1085,8 @@
         <td>2 Hulls</td>
         <td><a href="robinson/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Samarkand</td>
-        <td>Carrier</td>
-        <td>Inner Sphere</td>
-        <td>Star League</td>
-        <td>2668</td>
-        <td>350,000 Tons</td>
-        <td>4</td>
-        <td>72</td>
-        <td>2 Hulls</td>
-        <td><a href="samarkand-ii/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
-      </tr>
-      <tr>
-        <td class="font-bold text-bright">Samarkand</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Samarkand (Block I)</div><div class="lineage-sub"><span class="lineage-badge lineage-base">[BASE DESIGN // 1 SUBCLASS]</span></div></td>
         <td>Carrier</td>
         <td>Inner Sphere</td>
         <td>Star League</td>
@@ -1104,8 +1097,20 @@
         <td>11 Hulls</td>
         <td><a href="samarkand/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Sovetskii Soyuz</td>
+      <tr data-lineage="subclass">
+        <td><div class="font-bold text-bright">Samarkand (Block II)</div><div class="lineage-sub"><span class="lineage-badge lineage-variant">[SUBCLASS / VARIANT]</span><span class="text-dim">DERIVED FROM:</span> <a href="samarkand/index.html" class="action-link">Samarkand (Block I)</a></div></td>
+        <td>Carrier</td>
+        <td>Inner Sphere</td>
+        <td>Star League</td>
+        <td>2668</td>
+        <td>350,000 Tons</td>
+        <td>4</td>
+        <td>72</td>
+        <td>2 Hulls</td>
+        <td><a href="samarkand-ii/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
+      </tr>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Sovetskii Soyuz</div></td>
         <td>Heavy Cruiser</td>
         <td>Star League / Clan</td>
         <td>Star League</td>
@@ -1116,8 +1121,8 @@
         <td>19 Hulls</td>
         <td><a href="sovetskii-soyuz/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Soyal</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Soyal</div></td>
         <td>Heavy Cruiser</td>
         <td>Inner Sphere</td>
         <td>Star League</td>
@@ -1128,8 +1133,8 @@
         <td>7 Hulls</td>
         <td><a href="soyal/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Stefan Amaris</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Stefan Amaris</div></td>
         <td>Battleship</td>
         <td>Inner Sphere</td>
         <td>Star League</td>
@@ -1140,8 +1145,8 @@
         <td>3 Hulls</td>
         <td><a href="stefan-amaris/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Suffren</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Suffren</div></td>
         <td>Destroyer</td>
         <td>Inner Sphere (ComStar)</td>
         <td>FedCom Civil War</td>
@@ -1152,8 +1157,8 @@
         <td>2 Hulls</td>
         <td><a href="suffren/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Sylvester</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Sylvester</div><div class="lineage-sub"><span class="lineage-badge lineage-base">[BASE DESIGN // 1 SUBCLASS]</span></div></td>
         <td>Transport</td>
         <td>Star League</td>
         <td>Age of War</td>
@@ -1164,8 +1169,8 @@
         <td>0 Hulls</td>
         <td><a href="sylvester/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Tatsumaki</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Tatsumaki</div></td>
         <td>Destroyer</td>
         <td>Inner Sphere</td>
         <td>Clan Invasion</td>
@@ -1176,8 +1181,8 @@
         <td>2 Hulls</td>
         <td><a href="tatsumaki/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Texas</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Texas</div></td>
         <td>Battleship</td>
         <td>Star League / Clan</td>
         <td>Star League</td>
@@ -1188,8 +1193,8 @@
         <td>12 Hulls</td>
         <td><a href="texas/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Tharkad</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Tharkad</div></td>
         <td>Battlecruiser</td>
         <td>Inner Sphere</td>
         <td>Star League</td>
@@ -1200,8 +1205,8 @@
         <td>6 Hulls</td>
         <td><a href="tharkad/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Thera</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Thera</div></td>
         <td>Carrier</td>
         <td>Inner Sphere</td>
         <td>Clan Invasion</td>
@@ -1212,8 +1217,8 @@
         <td>6 Hulls</td>
         <td><a href="thera/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Tracker</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Tracker</div></td>
         <td>Surveillance</td>
         <td>Star League</td>
         <td>Age of War</td>
@@ -1224,8 +1229,8 @@
         <td>1 Hulls</td>
         <td><a href="tracker/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Unclassed Capital WarShip</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Unclassed Capital WarShip</div></td>
         <td>Unclassified</td>
         <td>Universal</td>
         <td>[UNSPECIFIED]</td>
@@ -1236,8 +1241,8 @@
         <td>59 Hulls</td>
         <td><a href="unclassed-warship/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Vigilant</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Vigilant</div></td>
         <td>Corvette</td>
         <td>Star League</td>
         <td>Age of War</td>
@@ -1248,32 +1253,32 @@
         <td>5 Hulls</td>
         <td><a href="vigilant/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Vincent</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Vincent Mk. 39</div><div class="lineage-sub"><span class="lineage-badge lineage-base">[BASE DESIGN // 1 SUBCLASS]</span></div></td>
         <td>Corvette</td>
-        <td>Star League / Clan</td>
+        <td>Star League</td>
         <td>Age of War</td>
         <td>2432</td>
         <td>420,000 Tons</td>
         <td>0</td>
-        <td>10</td>
-        <td>23 Hulls</td>
-        <td><a href="vincent-mk-42/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
-      </tr>
-      <tr>
-        <td class="font-bold text-bright">Vincent Mk. 39</td>
-        <td>Corvette</td>
-        <td>Inner Sphere</td>
-        <td>Star League</td>
-        <td>2750</td>
-        <td>420,000 Tons</td>
-        <td>0</td>
         <td>6</td>
-        <td>14 Hulls</td>
+        <td>16 Hulls</td>
         <td><a href="vincent-mk-39/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Volga</td>
+      <tr data-lineage="subclass">
+        <td><div class="font-bold text-bright">Vincent Mk. 42 (Clan Upgrade)</div><div class="lineage-sub"><span class="lineage-badge lineage-variant">[SUBCLASS / VARIANT]</span><span class="text-dim">DERIVED FROM:</span> <a href="vincent-mk-39/index.html" class="action-link">Vincent Mk. 39</a></div></td>
+        <td>Corvette</td>
+        <td>Clan</td>
+        <td>[UNSPECIFIED]</td>
+        <td><span class="text-dim">[UNSPECIFIED IN ARCHIVE]</span></td>
+        <td>420,000 Tons</td>
+        <td>0</td>
+        <td>10</td>
+        <td>21 Hulls</td>
+        <td><a href="vincent-mk-42/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
+      </tr>
+      <tr data-lineage="subclass">
+        <td><div class="font-bold text-bright">Volga</div><div class="lineage-sub"><span class="lineage-badge lineage-variant">[SUBCLASS / VARIANT]</span><span class="text-dim">DERIVED FROM:</span> <a href="quixote/index.html" class="action-link">Quixote</a></div></td>
         <td>Transport</td>
         <td>Star League (2750)/Clan</td>
         <td>Star League</td>
@@ -1284,8 +1289,8 @@
         <td>11 Hulls</td>
         <td><a href="volga/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Wagon Wheel</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Wagon Wheel</div></td>
         <td>Frigate</td>
         <td>Inner Sphere / Periphery</td>
         <td>Age of War</td>
@@ -1296,8 +1301,8 @@
         <td>4 Hulls</td>
         <td><a href="wagon-wheel/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Whirlwind</td>
+      <tr data-lineage="subclass">
+        <td><div class="font-bold text-bright">Whirlwind</div><div class="lineage-sub"><span class="lineage-badge lineage-variant">[SUBCLASS / VARIANT]</span><span class="text-dim">DERIVED FROM:</span> <a href="davion/index.html" class="action-link">Davion (Block I)</a></div></td>
         <td>Destroyer</td>
         <td>Star League / Clan</td>
         <td>Star League</td>
@@ -1308,8 +1313,8 @@
         <td>10 Hulls</td>
         <td><a href="whirlwind/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Winchester</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Winchester</div></td>
         <td>Cruiser</td>
         <td>Star League</td>
         <td>Age of War</td>
@@ -1320,8 +1325,8 @@
         <td>1 Hulls</td>
         <td><a href="winchester/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">York</td>
+      <tr data-lineage="subclass">
+        <td><div class="font-bold text-bright">York</div><div class="lineage-sub"><span class="lineage-badge lineage-variant">[SUBCLASS / VARIANT]</span><span class="text-dim">DERIVED FROM:</span> <a href="riga-ii/index.html" class="action-link">Riga II</a></div></td>
         <td>Destroyer / Carrier</td>
         <td>Clan</td>
         <td>Succession Wars</td>
@@ -1329,11 +1334,11 @@
         <td>600,000 Tons</td>
         <td>2</td>
         <td>50</td>
-        <td>12 Hulls</td>
+        <td>13 Hulls</td>
         <td><a href="york/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Zechetinu</td>
+      <tr data-lineage="base">
+        <td><div class="font-bold text-bright">Zechetinu</div><div class="lineage-sub"><span class="lineage-badge lineage-base">[BASE DESIGN // 1 SUBCLASS]</span></div></td>
         <td>Corvette</td>
         <td>Inner Sphere</td>
         <td>Clan Invasion</td>
@@ -1344,8 +1349,8 @@
         <td>4 Hulls</td>
         <td><a href="zechetinu/index.html" class="action-link">&gt;&gt; TECHNICAL DOSSIER</a></td>
       </tr>
-      <tr>
-        <td class="font-bold text-bright">Zechetinu II</td>
+      <tr data-lineage="subclass">
+        <td><div class="font-bold text-bright">Zechetinu II</div><div class="lineage-sub"><span class="lineage-badge lineage-variant">[SUBCLASS / VARIANT]</span><span class="text-dim">DERIVED FROM:</span> <a href="zechetinu/index.html" class="action-link">Zechetinu</a></div></td>
         <td>Corvette</td>
         <td>Inner Sphere</td>
         <td>Clan Invasion</td>
