@@ -1,15 +1,98 @@
-﻿/* BATTLETECH WARSHIPS ARCHIVE - CASSETTE FUTURISM THEME */
-:root {
-  --bg-primary: #0a0b0d;
-  --bg-surface: #111418;
-  --bg-panel: #161b22;
-  --border-dim: #2b3644;
+﻿/* BATTLETECH WARSHIPS ARCHIVE - NAVAL CIC CASSETTE FUTURISM THEMES */
+:root,
+[data-theme="aegis"] {
+  --bg-primary: #040a12;
+  --bg-surface: #081321;
+  --bg-panel: #0d1d31;
+  --bg-elevated: #132942;
+  --border-dim: #1c3959;
+  --border-bright: #38bdf8;
+  --panel-glow: rgba(56, 189, 248, 0.14);
+  --row-hover: rgba(56, 189, 248, 0.09);
+  --grid-line: rgba(56, 189, 248, 0.035);
+
+  --text-primary: #38bdf8;
+  --text-dim: #678eae;
+  --text-bright: #8ce0ff;
+  --text-white: #e2f1ff;
+  --accent-aux: #fbbf24;
+
+  --status-active: #34d399;
+  --status-destroyed: #fb7185;
+  --status-scuttled: #fb923c;
+  --status-preserved: #38bdf8;
+  --status-mia: #fbbf24;
+  --status-retired: #94a3b8;
+
+  --font-mono: ui-monospace, "Cascadia Mono", "Consolas", "Source Code Pro", "Liberation Mono", "Courier New", monospace;
+}
+
+[data-theme="sonar"] {
+  --bg-primary: #030b09;
+  --bg-surface: #071512;
+  --bg-panel: #0b211c;
+  --bg-elevated: #113029;
+  --border-dim: #19453b;
+  --border-bright: #2dd4bf;
+  --panel-glow: rgba(45, 212, 191, 0.14);
+  --row-hover: rgba(45, 212, 191, 0.09);
+  --grid-line: rgba(45, 212, 191, 0.035);
+
+  --text-primary: #2dd4bf;
+  --text-dim: #5da394;
+  --text-bright: #7ef7e4;
+  --text-white: #dcfce7;
+  --accent-aux: #f59e0b;
+
+  --status-active: #4ade80;
+  --status-destroyed: #fb7185;
+  --status-scuttled: #fb923c;
+  --status-preserved: #38bdf8;
+  --status-mia: #fbbf24;
+  --status-retired: #94a3b8;
+}
+
+[data-theme="redwatch"] {
+  --bg-primary: #090406;
+  --bg-surface: #13080c;
+  --bg-panel: #1d0d13;
+  --bg-elevated: #29121b;
+  --border-dim: #4c1d2b;
+  --border-bright: #ff4d5e;
+  --panel-glow: rgba(255, 77, 94, 0.15);
+  --row-hover: rgba(255, 77, 94, 0.10);
+  --grid-line: rgba(255, 77, 94, 0.035);
+
+  --text-primary: #ff5c6c;
+  --text-dim: #ad6875;
+  --text-bright: #ff949f;
+  --text-white: #ffe8ea;
+  --accent-aux: #fb923c;
+
+  --status-active: #ff8a96;
+  --status-destroyed: #ff2a40;
+  --status-scuttled: #fb923c;
+  --status-preserved: #f472b6;
+  --status-mia: #fbbf24;
+  --status-retired: #9e737c;
+}
+
+[data-theme="amber"] {
+  --bg-primary: #080b10;
+  --bg-surface: #0e141d;
+  --bg-panel: #151e2b;
+  --bg-elevated: #1d293b;
+  --border-dim: #2f3e52;
   --border-bright: #ffb000;
-  
+  --panel-glow: rgba(255, 176, 0, 0.14);
+  --row-hover: rgba(255, 176, 0, 0.08);
+  --grid-line: rgba(255, 176, 0, 0.03);
+
   --text-primary: #ffb000;
-  --text-dim: #b37b00;
+  --text-dim: #b38622;
   --text-bright: #ffe082;
-  --text-white: #e6edf3;
+  --text-white: #e8eef5;
+  --accent-aux: #38bdf8;
 
   --status-active: #33ff66;
   --status-destroyed: #ff3344;
@@ -17,8 +100,6 @@
   --status-preserved: #33ccff;
   --status-mia: #ffaa00;
   --status-retired: #8899aa;
-
-  --font-mono: ui-monospace, "Cascadia Mono", "Consolas", "Source Code Pro", "Liberation Mono", "Courier New", monospace;
 }
 
 * {
@@ -29,13 +110,18 @@
 
 body {
   background-color: var(--bg-primary);
+  background-image:
+    radial-gradient(circle at 50% 0%, var(--panel-glow) 0%, transparent 58%),
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+  background-size: 100% 100%, 32px 32px, 32px 32px;
   color: var(--text-primary);
   font-family: var(--font-mono);
   font-size: 14px;
   line-height: 1.5;
   min-height: 100vh;
   position: relative;
-  text-shadow: 0 0 2px rgba(255, 176, 0, 0.4);
+  text-shadow: 0 0 1px var(--panel-glow);
 }
 
 /* Subtle CRT Scanline Micro-Texture */
@@ -47,8 +133,8 @@ body::after {
   background: repeating-linear-gradient(
     to bottom,
     transparent 0px,
-    transparent 2px,
-    rgba(0, 0, 0, 0.22) 3px
+    transparent 3px,
+    rgba(0, 0, 0, 0.16) 4px
   );
   z-index: 9999;
 }
@@ -60,100 +146,257 @@ body::after {
 }
 
 .terminal-container {
-  max-width: 1200px;
+  max-width: 1240px;
   margin: 0 auto;
-  padding: 1.5rem 1rem 3rem;
+  padding: 1.25rem 1rem 3rem;
 }
 
+/* Naval CIC Top Telemetry Strip & Theme Switcher */
 .terminal-header {
-  text-align: center;
   margin-bottom: 1rem;
 }
 
-.header-pre {
-  color: var(--border-bright);
+.cic-topbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.65rem;
+  background-color: var(--bg-panel);
+  border: 1px solid var(--border-dim);
+  border-bottom: none;
+  padding: 0.45rem 0.85rem;
+  font-size: 0.78rem;
+}
+
+.cic-telemetry {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-bright);
+  letter-spacing: 0.5px;
   font-weight: bold;
-  letter-spacing: -1px;
-  overflow: hidden;
+}
+
+.cic-pip {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--status-active);
+  box-shadow: 0 0 8px var(--status-active);
+  flex-shrink: 0;
+}
+
+.cic-theme-switcher {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.cic-switcher-label {
+  color: var(--text-dim);
+  font-size: 0.72rem;
+  letter-spacing: 0.8px;
+  margin-right: 0.25rem;
+}
+
+.cic-theme-btn {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-dim);
+  color: var(--text-dim);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  padding: 0.22rem 0.55rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.14s ease;
+}
+
+.cic-theme-btn:hover {
+  color: var(--text-bright);
+  border-color: var(--border-bright);
+  background-color: var(--bg-elevated);
+}
+
+.cic-theme-btn.active {
+  color: var(--text-bright);
+  border-color: var(--border-bright);
+  background-color: var(--bg-elevated);
+  box-shadow: inset 0 2px 0 var(--border-bright), 0 0 10px var(--panel-glow);
+}
+
+.cic-masthead {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-dim);
+  border-top: 2px solid var(--border-bright);
+  box-shadow: inset 0 1px 0 var(--panel-glow), 0 8px 24px rgba(0, 0, 0, 0.35);
+  padding: 0.95rem 1.25rem;
+  text-align: center;
+  position: relative;
+}
+
+.header-kicker {
+  font-size: 0.72rem;
+  letter-spacing: 2px;
+  color: var(--accent-aux);
+  margin-bottom: 0.2rem;
+  font-weight: bold;
 }
 
 .header-title {
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   font-weight: bold;
   color: var(--text-bright);
-  letter-spacing: 1px;
-  margin: 0.25rem 0;
+  letter-spacing: 1.5px;
+  margin: 0.15rem 0;
 }
 
 .header-sub {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: var(--text-dim);
+  letter-spacing: 0.6px;
 }
 
+/* Backlit CIC Navigation Bay */
 .terminal-nav {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
   justify-content: center;
-  margin: 0.75rem 0;
+  margin: 0.85rem 0;
 }
 
 .nav-link {
   color: var(--text-primary);
   text-decoration: none;
-  padding: 0.25rem 0.5rem;
+  padding: 0.38rem 0.7rem;
   border: 1px solid var(--border-dim);
-  background-color: var(--bg-surface);
+  background-color: var(--bg-panel);
+  font-size: 0.85rem;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+  position: relative;
   transition: all 0.15s ease;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.15s ease, box-shadow 0.15s ease;
 }
 
 .nav-link:hover, .nav-link.active {
   border-color: var(--border-bright);
-  background-color: var(--border-bright);
-  color: var(--bg-primary);
+  background-color: var(--bg-elevated);
+  color: var(--text-bright);
+  box-shadow: 0 0 12px var(--panel-glow);
   text-shadow: none;
 }
 
-.nav-divider {
-  color: var(--border-dim);
-  text-align: center;
-  overflow: hidden;
-  margin-bottom: 1rem;
+.nav-link:hover::before, .nav-link.active::before {
+  background-color: var(--border-bright);
+  box-shadow: 0 0 8px var(--border-bright);
+}
+
+.cic-divider {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0.85rem 0 1.2rem;
+  color: var(--text-dim);
+  font-size: 0.7rem;
+  letter-spacing: 1.5px;
+}
+
+.cic-divider::before,
+.cic-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--border-dim), transparent);
+}
+
+.cic-divider-tag {
+  padding: 0.1rem 0.5rem;
+  border: 1px solid var(--border-dim);
+  background-color: var(--bg-surface);
+  white-space: nowrap;
 }
 
 .page-header-box {
   border-left: 4px solid var(--border-bright);
-  padding-left: 0.75rem;
-  margin-bottom: 1.5rem;
+  background: linear-gradient(90deg, var(--panel-glow) 0%, transparent 65%);
+  padding: 0.5rem 0.9rem;
+  margin-bottom: 1.4rem;
 }
 
 .page-title {
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   color: var(--text-bright);
-  letter-spacing: 0.5px;
+  letter-spacing: 0.6px;
 }
 
 .page-subtitle {
   color: var(--text-dim);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
-/* Panel & Boxes */
+/* Recessed Instrument Panels with Corner Reticle Brackets */
 .panel-box {
   background-color: var(--bg-surface);
   border: 1px solid var(--border-dim);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03), 0 4px 16px rgba(0, 0, 0, 0.25);
+  background-image:
+    linear-gradient(var(--border-bright), var(--border-bright)),
+    linear-gradient(var(--border-bright), var(--border-bright)),
+    linear-gradient(var(--border-bright), var(--border-bright)),
+    linear-gradient(var(--border-bright), var(--border-bright)),
+    linear-gradient(var(--border-bright), var(--border-bright)),
+    linear-gradient(var(--border-bright), var(--border-bright)),
+    linear-gradient(var(--border-bright), var(--border-bright)),
+    linear-gradient(var(--border-bright), var(--border-bright));
+  background-repeat: no-repeat;
+  background-size: 8px 1px, 1px 8px, 8px 1px, 1px 8px, 8px 1px, 1px 8px, 8px 1px, 1px 8px;
+  background-position: top left, top left, top right, top right, bottom left, bottom left, bottom right, bottom right;
   margin-bottom: 1.5rem;
-  padding: 1rem;
+  padding: 1rem 1.1rem;
 }
 
 .panel-header {
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: var(--text-bright);
-  border-bottom: 1px solid var(--border-dim);
-  padding-bottom: 0.5rem;
-  margin-bottom: 0.75rem;
-  letter-spacing: 0.5px;
+  background-color: var(--bg-panel);
+  border: 1px solid var(--border-dim);
+  border-left: 3px solid var(--border-bright);
+  padding: 0.4rem 0.7rem;
+  margin-bottom: 0.85rem;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.panel-header::after {
+  content: "";
+  width: 48px;
+  height: 10px;
+  opacity: 0.55;
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--border-dim),
+    var(--border-dim) 2px,
+    transparent 2px,
+    transparent 6px
+  );
 }
 
 /* Tables */
@@ -166,34 +409,59 @@ body::after {
   width: 100%;
   border-collapse: collapse;
   text-align: left;
+  font-variant-numeric: tabular-nums;
 }
 
 .terminal-table th {
   background-color: var(--bg-panel);
   color: var(--text-bright);
   border: 1px solid var(--border-dim);
+  border-bottom: 2px solid var(--border-bright);
   padding: 0.5rem 0.75rem;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.6px;
   text-transform: uppercase;
 }
 
 .terminal-table td {
   border: 1px solid var(--border-dim);
   padding: 0.5rem 0.75rem;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
+}
+
+.terminal-table tbody tr:nth-child(even) td {
+  background-color: rgba(255, 255, 255, 0.015);
 }
 
 .terminal-table tr:hover td {
-  background-color: rgba(255, 176, 0, 0.07);
+  background-color: var(--row-hover);
 }
 
-/* Status Badges */
+.terminal-table tbody tr:hover td:first-child {
+  box-shadow: inset 3px 0 0 var(--border-bright);
+}
+
+/* Naval Status Badges with LED Indicator Pip */
 .status-badge {
-  display: inline-block;
-  padding: 0.1rem 0.4rem;
-  font-size: 0.8rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.14rem 0.48rem;
+  font-size: 0.76rem;
   font-weight: bold;
+  letter-spacing: 0.4px;
   border-radius: 2px;
+  background-color: color-mix(in srgb, currentColor 11%, transparent);
+  white-space: nowrap;
+}
+
+.status-badge::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: currentColor;
+  box-shadow: 0 0 6px currentColor;
 }
 
 .status-active { color: var(--status-active); border: 1px solid var(--status-active); }
@@ -209,14 +477,35 @@ body::after {
 .text-white { color: var(--text-white); }
 .font-bold { font-weight: bold; }
 
+.unspecified {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+}
+
+.meta-tag {
+  color: var(--accent-aux);
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.status-pill {
+  color: var(--status-active);
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
 a.action-link {
   color: var(--text-bright);
-  text-decoration: underline;
+  text-decoration: none;
+  border-bottom: 1px dashed var(--border-bright);
+  transition: all 0.12s ease;
 }
 
 a.action-link:hover {
   background-color: var(--border-bright);
   color: var(--bg-primary);
+  border-bottom-color: transparent;
+  padding: 0 0.2rem;
   text-shadow: none;
 }
 
@@ -236,53 +525,64 @@ a.action-link:hover {
   width: 100%;
   max-width: 450px;
   background-color: var(--bg-panel);
-  border: 1px solid var(--border-bright);
+  border: 1px solid var(--border-dim);
+  border-left: 3px solid var(--border-bright);
   color: var(--text-bright);
-  padding: 0.4rem 0.75rem;
+  padding: 0.45rem 0.75rem;
   font-family: var(--font-mono);
-  font-size: 0.9rem;
+  font-size: 0.88rem;
+}
+
+.terminal-input::placeholder {
+  color: var(--text-dim);
 }
 
 .terminal-input:focus {
   outline: none;
-  background-color: #202733;
+  border-color: var(--border-bright);
+  background-color: var(--bg-elevated);
+  box-shadow: 0 0 12px var(--panel-glow);
 }
 
 .terminal-select {
   background-color: var(--bg-panel);
   border: 1px solid var(--border-dim);
   color: var(--text-bright);
-  padding: 0.4rem 0.65rem;
+  padding: 0.45rem 0.65rem;
   font-family: var(--font-mono);
-  font-size: 0.85rem;
+  font-size: 0.84rem;
   min-width: 170px;
 }
 
 .terminal-select:focus {
   outline: none;
   border-color: var(--border-bright);
-  background-color: #202733;
+  background-color: var(--bg-elevated);
 }
 
 .terminal-btn {
   background-color: var(--bg-panel);
   border: 1px solid var(--border-dim);
   color: var(--text-primary);
-  padding: 0.4rem 0.75rem;
+  padding: 0.42rem 0.78rem;
   font-family: var(--font-mono);
-  font-size: 0.85rem;
+  font-size: 0.84rem;
+  font-weight: bold;
   cursor: pointer;
+  transition: all 0.14s ease;
 }
 
 .terminal-btn:hover {
   border-color: var(--border-bright);
   color: var(--text-bright);
-  background-color: #202733;
+  background-color: var(--bg-elevated);
+  box-shadow: 0 0 10px var(--panel-glow);
 }
 
 .filter-count {
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   margin-left: auto;
+  font-variant-numeric: tabular-nums;
 }
 
 .citation-groups {
@@ -312,7 +612,7 @@ a.action-link:hover {
 }
 
 .citation-group-summary:hover {
-  background-color: #202733;
+  background-color: var(--bg-elevated);
 }
 
 .citation-group .table-responsive {
@@ -322,8 +622,8 @@ a.action-link:hover {
 /* Global Quick-Jump Search */
 .global-search-bar {
   position: relative;
-  max-width: 680px;
-  margin: 0.5rem auto 0.75rem;
+  max-width: 720px;
+  margin: 0.65rem auto 0.75rem;
 }
 
 .global-search-input {
@@ -343,7 +643,7 @@ a.action-link:hover {
   z-index: 200;
   max-height: 360px;
   overflow-y: auto;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.85);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.85);
 }
 
 .global-search-item {
@@ -356,7 +656,7 @@ a.action-link:hover {
 }
 
 .global-search-item:hover {
-  background-color: rgba(255, 176, 0, 0.14);
+  background-color: var(--row-hover);
 }
 
 .global-search-meta {
@@ -365,7 +665,7 @@ a.action-link:hover {
   color: var(--text-dim);
 }
 
-/* Interactive Sol-Relative Starmap */
+/* Interactive Sol-Relative Naval PPI Starmap */
 .starmap-controls {
   display: flex;
   flex-wrap: wrap;
@@ -376,13 +676,14 @@ a.action-link:hover {
 
 .starmap-frame {
   border: 1px solid var(--border-dim);
-  background-color: #06080a;
+  background: radial-gradient(circle at center, var(--bg-surface) 0%, var(--bg-primary) 85%);
+  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.75);
   overflow: hidden;
 }
 
 .starmap-svg {
   width: 100%;
-  height: 430px;
+  height: 440px;
   display: block;
 }
 
@@ -391,14 +692,14 @@ a.action-link:hover {
 }
 
 .starmap-node:hover circle {
-  fill: #33ff66;
-  stroke: #ffffff;
+  fill: var(--status-active);
+  stroke: var(--text-white);
 }
 
-/* Grid & Spec Cards */
+/* Grid & Spec Readout Modules */
 .spec-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 0.75rem;
   margin-bottom: 1rem;
 }
@@ -406,18 +707,29 @@ a.action-link:hover {
 .spec-item {
   background-color: var(--bg-panel);
   border: 1px solid var(--border-dim);
-  padding: 0.5rem 0.75rem;
+  border-top: 2px solid var(--border-dim);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+  padding: 0.55rem 0.8rem;
+  transition: border-color 0.15s ease;
+}
+
+.spec-item:hover {
+  border-top-color: var(--border-bright);
 }
 
 .spec-label {
-  font-size: 0.8rem;
+  font-size: 0.74rem;
   color: var(--text-dim);
+  letter-spacing: 0.7px;
   text-transform: uppercase;
+  margin-bottom: 0.15rem;
 }
 
 .spec-val {
   font-size: 1rem;
   color: var(--text-bright);
+  font-weight: bold;
+  font-variant-numeric: tabular-nums;
 }
 
 /* Timeline Cards */
@@ -428,6 +740,7 @@ a.action-link:hover {
 }
 
 .timeline-item {
+  border: 1px solid var(--border-dim);
   border-left: 3px solid var(--border-bright);
   background-color: var(--bg-panel);
   padding: 0.75rem 1rem;
@@ -444,11 +757,12 @@ a.action-link:hover {
 .timeline-epoch {
   color: var(--text-bright);
   font-weight: bold;
+  font-variant-numeric: tabular-nums;
 }
 
 .timeline-summary {
   color: var(--text-white);
-  font-size: 0.95rem;
+  font-size: 0.94rem;
 }
 
 /* Citations */
@@ -461,12 +775,16 @@ a.action-link:hover {
 .citation-card {
   background-color: var(--bg-panel);
   border: 1px solid var(--border-dim);
-  padding: 0.6rem 0.8rem;
+  padding: 0.65rem 0.85rem;
 }
 
 .citation-meta {
   font-size: 0.85rem;
   margin-bottom: 0.3rem;
+}
+
+.citation-uri {
+  margin-bottom: 0.25rem;
 }
 
 .code-uri {
@@ -477,7 +795,7 @@ a.action-link:hover {
 
 .citation-excerpt {
   border-left: 2px solid var(--border-bright);
-  padding-left: 0.6rem;
+  padding-left: 0.65rem;
   margin-top: 0.4rem;
   font-style: italic;
   color: var(--text-white);
@@ -498,9 +816,22 @@ a.action-link:hover {
   font-weight: bold;
   color: var(--text-dim);
   font-size: 0.85rem;
+  letter-spacing: 0.6px;
 }
 
 .footer-sub {
   font-size: 0.75rem;
-  color: #664d00;
+  color: var(--text-dim);
+  opacity: 0.75;
+  margin-top: 0.2rem;
+}
+
+@media (max-width: 720px) {
+  .cic-topbar {
+    justify-content: center;
+    text-align: center;
+  }
+  .header-title {
+    font-size: 1.08rem;
+  }
 }

@@ -4,15 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>STAR SYSTEM CARTOGRAPHY DIRECTORY // BATTLETECH WARSHIPS ARCHIVE</title>
+  <script>(function(){try{const t=localStorage.getItem('btws-cic-theme')||'aegis';document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','aegis');}})();</script>
   <link rel="stylesheet" href="../assets/terminal.css">
 </head>
 <body>
 <div class="terminal-container">
   <header class="terminal-header">
-    <div class="header-pre">================================================================================</div>
-    <div class="header-title">COMSTAR NAVAL INTELLIGENCE ARCHIVE // WARSHIP MEMORIAL REGISTRY</div>
-    <div class="header-sub">TERMINAL NODE: TERRA-01 // PROVENANCE: VERIFIED PRIMARY LORE CORPUS</div>
-    <div class="header-pre">================================================================================</div>
+    <div class="cic-topbar">
+      <div class="cic-telemetry"><span class="cic-pip" aria-hidden="true"></span><span>CIC-PLOT: TERRA-01 // SLDF-BUWEPS &amp; COMSTAR NAVAL ARCHIVE</span></div>
+      <div class="cic-theme-switcher" role="group" aria-label="CIC Display Mode">
+        <span class="cic-switcher-label">CIC MODE:</span>
+        <button type="button" class="cic-theme-btn" data-theme-btn="aegis" title="AEGIS NTDS Blue-Water Plotter">AEGIS NTDS</button>
+        <button type="button" class="cic-theme-btn" data-theme-btn="sonar" title="Submarine Hydrophone Sonar">SONAR BSY-1</button>
+        <button type="button" class="cic-theme-btn" data-theme-btn="redwatch" title="Bridge Rigged for Red Night Watch">CONN RED</button>
+        <button type="button" class="cic-theme-btn" data-theme-btn="amber" title="SLDF Hegemony Brass &amp; Amber">SLDF BRASS</button>
+      </div>
+    </div>
+    <div class="cic-masthead">
+      <div class="header-kicker">STRATEGIC FLEET COMMAND // CAPITAL HULL &amp; ACTION REGISTRY</div>
+      <div class="header-title">BATTLETECH WARSHIPS // NAVAL INTELLIGENCE ARCHIVE</div>
+      <div class="header-sub">PRIMARY SOURCEBOOK &amp; NOVEL ARCHIVE // CLASSIFICATION: OPEN ARCHIVAL TERMINAL</div>
+    </div>
   </header>
   <nav class="terminal-nav">
     <a href="../index.html" class="nav-link">[ 00 // DASHBOARD ]</a>
@@ -20,13 +32,13 @@
     <a href="../vessels/index.html" class="nav-link">[ 02 // VESSEL MEMORIAL ]</a>
     <a href="../events/index.html" class="nav-link">[ 03 // BATTLE ARCHIVES ]</a>
     <a href="../systems/index.html" class="nav-link active">[ 04 // STAR SYSTEMS ]</a>
-    <a href="../citations/index.html" class="nav-link">[ 05 // LORE CITATIONS ]</a>
+    <a href="../citations/index.html" class="nav-link">[ 05 // BIBLIOGRAPHY ]</a>
   </nav>
   <div class="global-search-bar" data-global-search-container data-root="../">
     <input type="search" class="terminal-input global-search-input" data-global-search placeholder="QUICK-JUMP ARCHIVE (VESSELS, ALIASES, CLASSES, BATTLES, SYSTEMS)..." autocomplete="off">
     <div class="global-search-results" hidden></div>
   </div>
-  <div class="nav-divider">--------------------------------------------------------------------------------</div>
+  <div class="cic-divider" aria-hidden="true"><span class="cic-divider-tag">NAV-GRID // SECURE</span></div>
   <main class="terminal-main">
     <div class="page-header-box">
       <h1 class="page-title">&gt; STAR SYSTEM CARTOGRAPHY DIRECTORY</h1>
@@ -42,54 +54,59 @@
   </div>
   <div class="starmap-frame">
     <svg class="starmap-svg" data-starmap data-default-viewbox="-620 -620 1240 1240" viewBox="-620 -620 1240 1240" role="img" aria-label="Sol-relative Star System Naval Map">
-      <line x1="-5000" y1="0" x2="5000" y2="0" stroke="#202a36" stroke-width="1.5" />
-      <line x1="0" y1="-5000" x2="0" y2="5000" stroke="#202a36" stroke-width="1.5" />
-      <circle cx="0" cy="0" r="250" fill="none" stroke="#202a36" stroke-dasharray="6 6" stroke-width="1.5" />
-      <circle cx="0" cy="0" r="500" fill="none" stroke="#2b3644" stroke-dasharray="8 6" stroke-width="1.5" />
+      <line x1="-5000" y1="0" x2="5000" y2="0" stroke="var(--border-dim)" stroke-width="1.5" />
+      <line x1="0" y1="-5000" x2="0" y2="5000" stroke="var(--border-dim)" stroke-width="1.5" />
+      <line x1="-3500" y1="-3500" x2="3500" y2="3500" stroke="var(--border-dim)" stroke-opacity="0.45" stroke-dasharray="4 8" stroke-width="1" />
+      <line x1="-3500" y1="3500" x2="3500" y2="-3500" stroke="var(--border-dim)" stroke-opacity="0.45" stroke-dasharray="4 8" stroke-width="1" />
+      <circle cx="0" cy="0" r="250" fill="none" stroke="var(--border-dim)" stroke-dasharray="6 6" stroke-width="1.5" />
+      <circle cx="0" cy="0" r="500" fill="none" stroke="var(--border-dim)" stroke-dasharray="8 6" stroke-width="1.5" />
+      <circle cx="0" cy="0" r="750" fill="none" stroke="var(--border-dim)" stroke-opacity="0.55" stroke-dasharray="10 8" stroke-width="1.2" />
+      <text x="6" y="-255" fill="var(--text-dim)" font-size="10" font-family="monospace">250 LY</text>
+      <text x="6" y="-505" fill="var(--text-dim)" font-size="10" font-family="monospace">500 LY</text>
       <a href="avon/index.html" class="starmap-node">
         <title>Avon (Draconis Combine / Clan Nova Cat) [91.4, 247.8 LY] - 0 built, 1 actions, 2 fates</title>
-        <circle cx="91.4" cy="-247.8" r="8.8" fill="#ffb000" fill-opacity="0.82" stroke="#ffe082" stroke-width="1.2" />
-        <text x="91.4" y="-260.6" fill="#ffe082" font-size="11" font-family="monospace" text-anchor="middle">Avon</text>
+        <circle cx="91.4" cy="-247.8" r="8.8" fill="var(--text-primary)" fill-opacity="0.82" stroke="var(--text-bright)" stroke-width="1.2" />
+        <text x="91.4" y="-260.6" fill="var(--text-bright)" font-size="11" font-family="monospace" text-anchor="middle">Avon</text>
       </a>
       <a href="dieron/index.html" class="starmap-node">
         <title>Dieron (Draconis Combine / Dieron Military District) [96.3, 54.8 LY] - 3 built, 2 actions, 23 fates</title>
-        <circle cx="96.3" cy="-54.8" r="16.6" fill="#ffb000" fill-opacity="0.82" stroke="#ffe082" stroke-width="1.2" />
-        <text x="96.3" y="-75.4" fill="#ffe082" font-size="11" font-family="monospace" text-anchor="middle">Dieron</text>
+        <circle cx="96.3" cy="-54.8" r="16.6" fill="var(--text-primary)" fill-opacity="0.82" stroke="var(--text-bright)" stroke-width="1.2" />
+        <text x="96.3" y="-75.4" fill="var(--text-bright)" font-size="11" font-family="monospace" text-anchor="middle">Dieron</text>
       </a>
       <a href="galax/index.html" class="starmap-node">
         <title>Galax (Federated Suns / Crucis March) [276.4, -108.15 LY] - 7 built, 1 actions, 1 fates</title>
-        <circle cx="276.4" cy="108.15" r="11.6" fill="#ffb000" fill-opacity="0.82" stroke="#ffe082" stroke-width="1.2" />
-        <text x="276.4" y="92.6" fill="#ffe082" font-size="11" font-family="monospace" text-anchor="middle">Galax</text>
+        <circle cx="276.4" cy="108.15" r="11.6" fill="var(--text-primary)" fill-opacity="0.82" stroke="var(--text-bright)" stroke-width="1.2" />
+        <text x="276.4" y="92.6" fill="var(--text-bright)" font-size="11" font-family="monospace" text-anchor="middle">Galax</text>
       </a>
       <a href="kathil/index.html" class="starmap-node">
         <title>Kathil (Federated Suns / Capellan March) [268.45, -125.1 LY] - 4 built, 0 actions, 2 fates</title>
-        <circle cx="268.45" cy="125.1" r="10.4" fill="#b37b00" fill-opacity="0.82" stroke="#ffe082" stroke-width="1.2" />
-        <text x="268.45" y="110.7" fill="#ffe082" font-size="11" font-family="monospace" text-anchor="middle">Kathil</text>
+        <circle cx="268.45" cy="125.1" r="10.4" fill="var(--text-dim)" fill-opacity="0.82" stroke="var(--text-bright)" stroke-width="1.2" />
+        <text x="268.45" y="110.7" fill="var(--text-bright)" font-size="11" font-family="monospace" text-anchor="middle">Kathil</text>
       </a>
       <a href="luyten-68-28/index.html" class="starmap-node">
         <title>Luyten 68-28 (ComStar / Com Guard First Fleet) [-8.2, 12.1 LY] - 0 built, 1 actions, 8 fates</title>
-        <circle cx="-8.2" cy="-12.1" r="11.6" fill="#ffb000" fill-opacity="0.82" stroke="#ffe082" stroke-width="1.2" />
-        <text x="-8.2" y="-27.7" fill="#ffe082" font-size="11" font-family="monospace" text-anchor="middle">Luyten 68-28</text>
+        <circle cx="-8.2" cy="-12.1" r="11.6" fill="var(--text-primary)" fill-opacity="0.82" stroke="var(--text-bright)" stroke-width="1.2" />
+        <text x="-8.2" y="-27.7" fill="var(--text-bright)" font-size="11" font-family="monospace" text-anchor="middle">Luyten 68-28</text>
       </a>
       <a href="new-avalon/index.html" class="starmap-node">
         <title>New Avalon (Federated Suns / Crucis March) [221.75, -71.22 LY] - 0 built, 4 actions, 9 fates</title>
-        <circle cx="221.75" cy="71.22" r="12.9" fill="#ffb000" fill-opacity="0.82" stroke="#ffe082" stroke-width="1.2" />
-        <text x="221.75" y="54.3" fill="#ffe082" font-size="11" font-family="monospace" text-anchor="middle">New Avalon</text>
+        <circle cx="221.75" cy="71.22" r="12.9" fill="var(--text-primary)" fill-opacity="0.82" stroke="var(--text-bright)" stroke-width="1.2" />
+        <text x="221.75" y="54.3" fill="var(--text-bright)" font-size="11" font-family="monospace" text-anchor="middle">New Avalon</text>
       </a>
       <a href="new-earth/index.html" class="starmap-node">
         <title>New Earth (Terran Hegemony / SLDF) [-12.52, 3.13 LY] - 0 built, 1 actions, 10 fates</title>
-        <circle cx="-12.52" cy="-3.13" r="12.3" fill="#ffb000" fill-opacity="0.82" stroke="#ffe082" stroke-width="1.2" />
-        <text x="-12.52" y="-19.4" fill="#ffe082" font-size="11" font-family="monospace" text-anchor="middle">New Earth</text>
+        <circle cx="-12.52" cy="-3.13" r="12.3" fill="var(--text-primary)" fill-opacity="0.82" stroke="var(--text-bright)" stroke-width="1.2" />
+        <text x="-12.52" y="-19.4" fill="var(--text-bright)" font-size="11" font-family="monospace" text-anchor="middle">New Earth</text>
       </a>
       <a href="terra/index.html" class="starmap-node">
         <title>Terra (Sol) (Terran Hegemony / ComStar / Word of Blake) [0, 0 LY] - 26 built, 10 actions, 98 fates</title>
-        <circle cx="0" cy="-0" r="18" fill="#33ccff" fill-opacity="0.82" stroke="#ffe082" stroke-width="1.2" />
-        <text x="0" y="-22" fill="#ffe082" font-size="11" font-family="monospace" text-anchor="middle">Terra (Sol)</text>
+        <circle cx="0" cy="-0" r="18" fill="var(--accent-aux)" fill-opacity="0.82" stroke="var(--text-bright)" stroke-width="1.2" />
+        <text x="0" y="-22" fill="var(--text-bright)" font-size="11" font-family="monospace" text-anchor="middle">Terra (Sol)</text>
       </a>
       <a href="tikonov/index.html" class="starmap-node">
         <title>Tikonov (Capellan Confederation / Federated Commonwealth) [65.2, -55.4 LY] - 0 built, 2 actions, 3 fates</title>
-        <circle cx="65.2" cy="55.4" r="9.9" fill="#ffb000" fill-opacity="0.82" stroke="#ffe082" stroke-width="1.2" />
-        <text x="65.2" y="41.5" fill="#ffe082" font-size="11" font-family="monospace" text-anchor="middle">Tikonov</text>
+        <circle cx="65.2" cy="55.4" r="9.9" fill="var(--text-primary)" fill-opacity="0.82" stroke="var(--text-bright)" stroke-width="1.2" />
+        <text x="65.2" y="41.5" fill="var(--text-bright)" font-size="11" font-family="monospace" text-anchor="middle">Tikonov</text>
       </a>
     </svg>
   </div>
@@ -2213,9 +2230,9 @@
 
   </main>
   <footer class="terminal-footer">
-    <div class="nav-divider">--------------------------------------------------------------------------------</div>
+    <div class="cic-divider" aria-hidden="true"><span class="cic-divider-tag">END OF DOSSIER // ARCHIVE LOCK</span></div>
     <div class="footer-text">BATTLETECH CAPITAL WARSHIP MEMORIAL REGISTRY // ARCHIVAL TERMINAL ACCESS</div>
-    <div class="footer-sub">ALL HISTORICAL SPECIFICATIONS GROUNDED IN VERIFIED SOURCE MATERIAL VIA LORE MCP.</div>
+    <div class="footer-sub">ALL HISTORICAL SPECIFICATIONS CITE PUBLISHED BATTLETECH SOURCEBOOKS, TECHNICAL READOUTS, AND NOVELS.</div>
   </footer>
 </div>
 <script src="../assets/filter.js" defer></script>

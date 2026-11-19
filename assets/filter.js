@@ -1,5 +1,29 @@
-﻿// Vanilla JavaScript Combined Table Filter, Pagination & Citation Group Search
+﻿// Vanilla JavaScript CIC Theme Switcher, Combined Table Filter, Pagination & Citation Group Search
 document.addEventListener('DOMContentLoaded', function () {
+  const themeButtons = document.querySelectorAll('[data-theme-btn]');
+  function syncThemeButtons(activeTheme) {
+    themeButtons.forEach(function (btn) {
+      const btnTheme = btn.getAttribute('data-theme-btn');
+      const isMatch = btnTheme === activeTheme;
+      btn.classList.toggle('active', isMatch);
+      btn.setAttribute('aria-pressed', isMatch ? 'true' : 'false');
+    });
+  }
+  const initialTheme = document.documentElement.getAttribute('data-theme') || 'aegis';
+  syncThemeButtons(initialTheme);
+  themeButtons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      const chosen = btn.getAttribute('data-theme-btn') || 'aegis';
+      document.documentElement.setAttribute('data-theme', chosen);
+      try {
+        localStorage.setItem('btws-cic-theme', chosen);
+      } catch (e) {
+        // Ignore storage errors in restricted browsing modes
+      }
+      syncThemeButtons(chosen);
+    });
+  });
+
   const tableLimits = {};
   document.querySelectorAll('select[data-table-limit]').forEach(function (limitSel) {
     const tableId = limitSel.getAttribute('data-table-limit');

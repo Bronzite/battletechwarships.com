@@ -4,15 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VESSEL MEMORIAL // CBS EXSANGUINE // BATTLETECH WARSHIPS ARCHIVE</title>
+  <script>(function(){try{const t=localStorage.getItem('btws-cic-theme')||'aegis';document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','aegis');}})();</script>
   <link rel="stylesheet" href="../../assets/terminal.css">
 </head>
 <body>
 <div class="terminal-container">
   <header class="terminal-header">
-    <div class="header-pre">================================================================================</div>
-    <div class="header-title">COMSTAR NAVAL INTELLIGENCE ARCHIVE // WARSHIP MEMORIAL REGISTRY</div>
-    <div class="header-sub">TERMINAL NODE: TERRA-01 // PROVENANCE: VERIFIED PRIMARY LORE CORPUS</div>
-    <div class="header-pre">================================================================================</div>
+    <div class="cic-topbar">
+      <div class="cic-telemetry"><span class="cic-pip" aria-hidden="true"></span><span>CIC-PLOT: TERRA-01 // SLDF-BUWEPS &amp; COMSTAR NAVAL ARCHIVE</span></div>
+      <div class="cic-theme-switcher" role="group" aria-label="CIC Display Mode">
+        <span class="cic-switcher-label">CIC MODE:</span>
+        <button type="button" class="cic-theme-btn" data-theme-btn="aegis" title="AEGIS NTDS Blue-Water Plotter">AEGIS NTDS</button>
+        <button type="button" class="cic-theme-btn" data-theme-btn="sonar" title="Submarine Hydrophone Sonar">SONAR BSY-1</button>
+        <button type="button" class="cic-theme-btn" data-theme-btn="redwatch" title="Bridge Rigged for Red Night Watch">CONN RED</button>
+        <button type="button" class="cic-theme-btn" data-theme-btn="amber" title="SLDF Hegemony Brass &amp; Amber">SLDF BRASS</button>
+      </div>
+    </div>
+    <div class="cic-masthead">
+      <div class="header-kicker">STRATEGIC FLEET COMMAND // CAPITAL HULL &amp; ACTION REGISTRY</div>
+      <div class="header-title">BATTLETECH WARSHIPS // NAVAL INTELLIGENCE ARCHIVE</div>
+      <div class="header-sub">PRIMARY SOURCEBOOK &amp; NOVEL ARCHIVE // CLASSIFICATION: OPEN ARCHIVAL TERMINAL</div>
+    </div>
   </header>
   <nav class="terminal-nav">
     <a href="../../index.html" class="nav-link">[ 00 // DASHBOARD ]</a>
@@ -20,13 +32,13 @@
     <a href="../../vessels/index.html" class="nav-link active">[ 02 // VESSEL MEMORIAL ]</a>
     <a href="../../events/index.html" class="nav-link">[ 03 // BATTLE ARCHIVES ]</a>
     <a href="../../systems/index.html" class="nav-link">[ 04 // STAR SYSTEMS ]</a>
-    <a href="../../citations/index.html" class="nav-link">[ 05 // LORE CITATIONS ]</a>
+    <a href="../../citations/index.html" class="nav-link">[ 05 // BIBLIOGRAPHY ]</a>
   </nav>
   <div class="global-search-bar" data-global-search-container data-root="../../">
     <input type="search" class="terminal-input global-search-input" data-global-search placeholder="QUICK-JUMP ARCHIVE (VESSELS, ALIASES, CLASSES, BATTLES, SYSTEMS)..." autocomplete="off">
     <div class="global-search-results" hidden></div>
   </div>
-  <div class="nav-divider">--------------------------------------------------------------------------------</div>
+  <div class="cic-divider" aria-hidden="true"><span class="cic-divider-tag">NAV-GRID // SECURE</span></div>
   <main class="terminal-main">
     <div class="page-header-box">
       <h1 class="page-title">&gt; VESSEL MEMORIAL // CBS EXSANGUINE</h1>
@@ -69,7 +81,7 @@
       </div>
       <p class="timeline-summary">Critically damaged holding off the Star Adder punitive fleet on 3 August 3072 over York.</p>
       <div style="margin-top: 0.5rem;">
-        <div class="text-dim" style="font-size: 0.8rem;">&bull; Source: <em>35306 - The Wars of Reaving</em> (Pages 101-107) &mdash; &ldquo;The Star Adder fleet arrived at York on 3 August and immediately engaged the Exsanguine and the nearby recharge station... The Adders disengaged from the Exsanguine once it was determined the Spirit vessel was critically damaged. Star Admiral Ilse McFadden had several words for the departing Adders&rdquo;</div>
+        <div class="text-dim" style="font-size: 0.8rem;">&bull; <em>The Wars of Reaving</em>, Pages 101-107 &mdash; &ldquo;The Star Adder fleet arrived at York on 3 August and immediately engaged the Exsanguine and the nearby recharge station... The Adders disengaged from the Exsanguine once it was determined the Spirit vessel was critically damaged. Star Admiral Ilse McFadden had several words for the departing Adders&rdquo;</div>
       </div>
     </div>
     <div class="timeline-item">
@@ -86,7 +98,7 @@
       <p class="timeline-summary">Bargained down naval opposition to a fighter Trial of Possession, then devastated Indicass Alpha with orbital fire.</p>
       <div style="margin-top: 0.4rem;"><a href="../../events/battle-of-albion-3073/index.html" class="action-link">&gt;&gt; VIEW MULTI-SHIP ENGAGEMENT DOSSIER &amp; ORDER OF BATTLE</a></div>
       <div style="margin-top: 0.5rem;">
-        <div class="text-dim" style="font-size: 0.8rem;">&bull; Source: <em>35306 - The Wars of Reaving</em> (Trials of Annihilation (p. 123)) &mdash; &ldquo;Keller gave the order and the Exsanguine unloaded all available batteries into the city.&rdquo;</div>
+        <div class="text-dim" style="font-size: 0.8rem;">&bull; <em>The Wars of Reaving</em>, Trials of Annihilation (p. 123) &mdash; &ldquo;Keller gave the order and the Exsanguine unloaded all available batteries into the city.&rdquo;</div>
       </div>
     </div>
     <div class="timeline-item">
@@ -100,44 +112,40 @@
       </div>
       <p class="timeline-summary">Site of saKhan Constans Cluff&#39;s unaugmented Trial of Refusal duel against Galaxy Commander Keller in April 3073.</p>
       <div style="margin-top: 0.5rem;">
-        <div class="text-dim" style="font-size: 0.8rem;">&bull; Source: <em>35306 - The Wars of Reaving</em> (Pages 183-190) &mdash; &ldquo;In the subse-quent Trial of Refusal, he nearly killed Keller in an unaug-mented duel aboard the Exsanguine.&rdquo;</div>
+        <div class="text-dim" style="font-size: 0.8rem;">&bull; <em>The Wars of Reaving</em>, Pages 183-190 &mdash; &ldquo;In the subse-quent Trial of Refusal, he nearly killed Keller in an unaug-mented duel aboard the Exsanguine.&rdquo;</div>
       </div>
     </div>
   </div>
 </section>
 <section class="panel-box">
-  <div class="panel-header">[ LORE MCP VERIFICATION &amp; PRIMARY CITATIONS ]</div>
+  <div class="panel-header">[ PRIMARY SOURCE REFERENCES ]</div>
   <div class="citations-list">
     <div class="citation-card">
-      <div class="citation-meta"><span class="meta-tag">[CITE ID: cite-cbs-exsanguine-fmu-c5]</span> <a href="../../citations/10976-field-manual-updates/index.html#cite-cbs-exsanguine-fmu-c5" class="action-link"><strong class="text-bright">10976 - Field Manual Updates</strong></a> &mdash; <em>Blood Spirit Touman: Blood Galaxy (p. 41)</em> <span class="status-pill">[VERIFIED]</span></div>
-      <div class="citation-uri"><code class="code-uri">lore://BattleTech/10976 - Field Manual Updates/chunk/5</code></div>
+      <div class="citation-meta"><a href="../../citations/10976-field-manual-updates/index.html#cite-cbs-exsanguine-fmu-c5" class="action-link"><strong class="text-bright"><em>Field Manual Updates</em></strong></a> &mdash; <span class="text-dim">Blood Spirit Touman: Blood Galaxy (p. 41)</span></div>
       <blockquote class="citation-excerpt">&ldquo;leaving the Spirits only three extant WarShips: the Aegis-class Exsanguine, York-class Stooping Kite and the Black Lion-class Rocinante.&rdquo;</blockquote>
     </div>
     <div class="citation-card">
-      <div class="citation-meta"><span class="meta-tag">[CITE ID: cite-wor-exsanguine-c15]</span> <a href="../../citations/35306-the-wars-of-reaving/index.html#cite-wor-exsanguine-c15" class="action-link"><strong class="text-bright">35306 - The Wars of Reaving</strong></a> &mdash; <em>Albion Campaign (p. 123)</em> <span class="status-pill">[VERIFIED]</span></div>
-      <div class="citation-uri"><code class="code-uri">lore://BattleTech/35306 - The Wars of Reaving/chunk/15</code></div>
+      <div class="citation-meta"><a href="../../citations/35306-the-wars-of-reaving/index.html#cite-wor-exsanguine-c15" class="action-link"><strong class="text-bright"><em>The Wars of Reaving</em></strong></a> &mdash; <span class="text-dim">Albion Campaign (p. 123)</span></div>
       <blockquote class="citation-excerpt">&ldquo;The Exsanguine, only partially repaired... gave the order and the Exsanguine unloaded all available batteries into the city.&rdquo;</blockquote>
     </div>
     <div class="citation-card">
-      <div class="citation-meta"><span class="meta-tag">[CITE ID: cite-w6c-exsanguine-wor12]</span> <a href="../../citations/35306-the-wars-of-reaving/index.html#cite-w6c-exsanguine-wor12" class="action-link"><strong class="text-bright">35306 - The Wars of Reaving</strong></a> &mdash; <em>Pages 101-107</em> <span class="status-pill">[VERIFIED]</span></div>
-      <div class="citation-uri"><code class="code-uri">lore://BattleTech/35306 - The Wars of Reaving/chunk/12</code></div>
+      <div class="citation-meta"><a href="../../citations/35306-the-wars-of-reaving/index.html#cite-w6c-exsanguine-wor12" class="action-link"><strong class="text-bright"><em>The Wars of Reaving</em></strong></a> &mdash; <span class="text-dim">Pages 101-107</span></div>
       <blockquote class="citation-excerpt">&ldquo;The Star Adder fleet arrived at York on 3 August and immediately engaged the Exsanguine and the nearby recharge station... The Adders disengaged from the Exsanguine once it was determined the Spirit vessel was critically damaged. Star Admiral Ilse McFadden had several words for the departing Adders&rdquo;</blockquote>
     </div>
     <div class="citation-card">
-      <div class="citation-meta"><span class="meta-tag">[CITE ID: cite-w6c-exsanguine-wor23]</span> <a href="../../citations/35306-the-wars-of-reaving/index.html#cite-w6c-exsanguine-wor23" class="action-link"><strong class="text-bright">35306 - The Wars of Reaving</strong></a> &mdash; <em>Pages 183-190</em> <span class="status-pill">[VERIFIED]</span></div>
-      <div class="citation-uri"><code class="code-uri">lore://BattleTech/35306 - The Wars of Reaving/chunk/23</code></div>
+      <div class="citation-meta"><a href="../../citations/35306-the-wars-of-reaving/index.html#cite-w6c-exsanguine-wor23" class="action-link"><strong class="text-bright"><em>The Wars of Reaving</em></strong></a> &mdash; <span class="text-dim">Pages 183-190</span></div>
       <blockquote class="citation-excerpt">&ldquo;In the subse-quent Trial of Refusal, he nearly killed Keller in an unaug-mented duel aboard the Exsanguine.&rdquo;</blockquote>
     </div>
   </div>
-  <div class="citation-footnote"><a href="../../citations/index.html" class="action-link">&gt;&gt; VIEW COMPLETE CORPUS BIBLIOGRAPHY</a></div>
+  <div class="citation-footnote"><a href="../../citations/index.html" class="action-link">&gt;&gt; VIEW COMPLETE SOURCE BIBLIOGRAPHY</a></div>
 </section>
 
 
   </main>
   <footer class="terminal-footer">
-    <div class="nav-divider">--------------------------------------------------------------------------------</div>
+    <div class="cic-divider" aria-hidden="true"><span class="cic-divider-tag">END OF DOSSIER // ARCHIVE LOCK</span></div>
     <div class="footer-text">BATTLETECH CAPITAL WARSHIP MEMORIAL REGISTRY // ARCHIVAL TERMINAL ACCESS</div>
-    <div class="footer-sub">ALL HISTORICAL SPECIFICATIONS GROUNDED IN VERIFIED SOURCE MATERIAL VIA LORE MCP.</div>
+    <div class="footer-sub">ALL HISTORICAL SPECIFICATIONS CITE PUBLISHED BATTLETECH SOURCEBOOKS, TECHNICAL READOUTS, AND NOVELS.</div>
   </footer>
 </div>
 <script src="../../assets/filter.js" defer></script>
